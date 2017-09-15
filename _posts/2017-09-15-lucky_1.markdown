@@ -1,0 +1,52 @@
+---
+title:  "[Algorithm] Halloween Sale (1/77)"
+date:   2017-09-15 11:36:23
+categories: [study, lucky]
+tags: [study, algorithm, lucky, 77, 여개모]
+---
+## Halloween Sale
+```
+You wish to buy video games from the famous online video game store Mist.
+
+Usually, all games are sold at the same price,  dollars. However, they are planning to have the seasonal Halloween Sale next month in which you can buy games at a cheaper price. Specifically, the first game you buy during the sale will be sold at  dollars, but every subsequent game you buy will be sold at exactly  dollars less than the cost of the previous one you bought. This will continue until the cost becomes less than or equal to  dollars, after which every game you buy will cost  dollars each.
+
+For example, if ,  and , then the following are the costs of the first  games you buy, in order:
+
+You have  dollars in your Mist wallet. How many games can you buy during the Halloween Sale?
+
+Input Format
+
+The first and only line of input contains four space-separated integers , ,  and .
+
+Output Format
+
+Print a single line containing a single integer denoting the maximum number of games you can buy.
+
+```
+```
+#!/bin/python3
+
+import sys
+
+def howManyGames(p, d, m, s):
+    sum , count = p, 0
+    while sum < s:
+        p = max(p-d, m)
+        sum += p
+        count += 1
+    return count
+
+if __name__ == "__main__":
+    p, d, m, s = input().strip().split(' ')
+    p, d, m, s = [int(p), int(d), int(m), int(s)]
+    answer = howManyGames(p, d, m, s)
+    print(answer)
+
+```
+
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+  77문제가 행운을 가져다 주기를...☆
+```
