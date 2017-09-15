@@ -1,8 +1,8 @@
 ---
 title:  "[Algorithm] Plus Minus (4/77)"
 date:   2017-09-15 11:36:23
-categories: [study, lucky]
-tags: [study, algorithm, lucky, 77, 여개모]
+categories: [study]
+tags: [algorithm]
 ---
 ## Plus Minus
 ```
