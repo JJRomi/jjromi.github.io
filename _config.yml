@@ -3,7 +3,7 @@ title: JJromi
 description: 'JJromi blog'
 url: 'https://jjromi.github.io'
 baseurl: '/'
-# google_analytics: 'UA-XXXXXX-X'
+google_analytics: 'UA-106541147-1'
 # disqus_shortname: 'your-disqus-name'
 
 author:
