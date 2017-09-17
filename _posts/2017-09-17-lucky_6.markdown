@@ -1,0 +1,41 @@
+---
+title:  "[Algorithm] Mini-Max Sum (6/77)"
+date:   2017-09-17 17:55:23
+categories: [study]
+tags: [algorithm]
+---
+## Mini-Max Sum
+Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+
+Input Format
+
+A single line of five space-separated integers.
+
+Constraints
+
+Each integer is in the inclusive range .
+Output Format
+
+Print two space-separated long integers denoting the respective minimum and maximum values that can be calculated by summing exactly four of the five integers. (The output can be greater than 32 bit integer.)
+
+```
+#!/bin/python3
+
+import sys
+
+arr = list(map(int, input().strip().split(' ')))
+
+result = []
+for a in arr:
+    result.append(sum(arr)-a)
+
+min = min(result)
+max = max(result)
+
+print(min, max)
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```

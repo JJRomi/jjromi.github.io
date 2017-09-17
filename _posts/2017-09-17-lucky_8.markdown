@@ -1,0 +1,45 @@
+---
+title:  "[Algorithm] Time Conversion (8/77)"
+date:   2017-09-17 17:55:23
+categories: [study]
+tags: [algorithm]
+---
+## Staircase
+Given a time in -hour AM/PM format, convert it to military (-hour) time.
+
+Note: Midnight is  on a -hour clock, and  on a -hour clock. Noon is  on a -hour clock, and  on a -hour clock.
+
+Input Format
+
+A single string containing a time in -hour clock format (i.e.:  or ), where  and .
+
+Output Format
+
+Convert and print the given time in -hour format, where 00 <=hh<=23
+```
+#!/bin/python3
+
+import sys
+
+def timeConversion(s):
+    time_str = (s.replace('PM', '').replace('AM', ''))
+    time = time_str.split(':')
+    hour = int(time[0])
+    if 'AM' in s and hour) == 12:
+        time[0] = '00'
+    if 'PM' in s and hour < 12:
+        time[0] = str(hour + 12)
+    s = ':'.join(time)
+
+    return s
+    # Complete this function
+
+s = input().strip()
+result = timeConversion(s)
+print(result)
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```
