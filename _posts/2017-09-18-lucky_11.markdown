@@ -1,0 +1,36 @@
+---
+title:  "[Algorithm] Kangaroo (11/77)"
+date:   2017-09-18 17:55:23
+categories: [study]
+tags: [algorithm]
+---
+## Kangaroo
+There are two kangaroos on a number line ready to jump in the positive direction (i.e, toward positive infinity). The first kangaroo starts at location  and moves at a rate of  meters per jump. The second kangaroo starts at location  and moves at a rate of  meters per jump. Given the starting locations and movement rates for each kangaroo, can you determine if they'll ever land at the same location at the same time?
+
+```
+#!/bin/python3
+
+import sys
+
+def kangaroo(x1, v1, x2, v2):
+    x = x1 - x2
+    v = v2 - v1
+    if v2 >= v1:
+        return "NO"
+    elif x%v == 0 and x/v > 0:
+        return "YES"
+    else:
+        return "NO"
+    # Complete this function
+
+x1, v1, x2, v2 = input().strip().split(' ')
+x1, v1, x2, v2 = [int(x1), int(v1), int(x2), int(v2)]
+result = kangaroo(x1, v1, x2, v2)
+print(result)
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```

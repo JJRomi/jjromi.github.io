@@ -1,0 +1,48 @@
+---
+title:  "[Algorithm] Between Two Sets (12/77)"
+date:   2017-09-18 17:55:23
+categories: [study]
+tags: [algorithm]
+---
+## Between Two Sets
+Consider two sets of positive integers,  and . We say that a positive integer, , is between sets  and  if the following conditions are satisfied:
+
+All elements in  are factors of .
+ is a factor of all elements in .
+In other words, some  is between  and  if that value of  satisfies  for every  in  and also satisfies  for every  in . For example, if  and , then our possible  values are and .
+
+Given  and , find and print the number of integers (i.e., possible 's) that are between the two sets.
+
+Input Format
+
+The first line contains two space-separated integers describing the respective values of  (the number of elements in set ) and  (the number of elements in set ).
+The second line contains  distinct space-separated integers describing .
+The third line contains  distinct space-separated integers describing .
+
+```
+#!/bin/python3
+
+import sys
+
+def getTotalX(a, b):
+    result = 0
+    for i in range(max(a), min(b)+1):
+        n = list(filter(lambda x: (i%x) == 0, a))
+        m = list(filter(lambda y: (y%i) == 0, b))
+        if len(n) == len(a) and len(m) == len(b):
+           result += 1
+    return result     
+
+if __name__ == "__main__":
+    n, m = input().strip().split(' ')
+    n, m = [int(n), int(m)]
+    a = list(map(int, input().strip().split(' ')))
+    b = list(map(int, input().strip().split(' ')))
+    total = getTotalX(a, b)
+    print(total)
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```
