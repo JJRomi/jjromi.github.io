@@ -1,0 +1,36 @@
+---
+title:  "[Algorithm] Extra Long Factorials (16/77)"
+date:   2017-09-19 23:55:23
+categories: [study]
+tags: [algorithm]
+---
+## Extra Long Factorials
+You are given an integer . Print the factorial of this number.
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.math.BigInteger;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        BigInteger result = new BigInteger("1");
+        for(int i = n ; i > 0; i--){
+            BigInteger a = new BigInteger(String.valueOf(i));
+            result = result.multiply(a);
+        }
+        System.out.println(result);
+    }
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```

@@ -1,0 +1,61 @@
+---
+title:  "[Algorithm] Breaking the Records (13/77)"
+date:   2017-09-19 23:55:23
+categories: [study]
+tags: [algorithm]
+---
+## Breaking the Records
+Maria plays  games of college basketball in a season. Because she wants to go pro, she tracks her points scored per game sequentially in an array defined as . After each game , she checks to see if score  breaks her record for most or least points scored so far during that season.
+
+Given Maria's array of  for a season of  games, find and print the number of times she breaks her record for most and least points scored during the season.
+
+Note: Assume her records for most and least points at the start of the season are the number of points scored during the first game of the season.
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static int[] getRecord(int[] s){
+        int min =  s[0], max = s[0];
+        int[] change = new int[2];
+        for (Integer val : s){
+            if(max < val){
+                max = val;
+                change[0]++;
+            }else if(min > val){
+                min = val;
+                change[1]++;
+            }
+        }
+
+        return change;
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] s = new int[n];
+        for(int s_i=0; s_i < n; s_i++){
+            s[s_i] = in.nextInt();
+        }
+        int[] result = getRecord(s);
+        String separator = "", delimiter = " ";
+        for (Integer val : result) {
+            System.out.print(separator + val);
+            separator = delimiter;
+        }
+        System.out.println("");
+    }
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```
