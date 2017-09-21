@@ -2,7 +2,7 @@
 title:  "[Lucky Algorithm] Intro (00/77)"
 date:   2017-09-15 23:55:23
 categories: [study]
-tags: [algorithm]
+tags: [algorithm, lucky]
 ---
 ## Lucky 77 Algorithm Intro
 
