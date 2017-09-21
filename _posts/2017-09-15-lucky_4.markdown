@@ -25,7 +25,39 @@ print("%6f"%float(len([a for a in arr if a == 0])/n))
 
 ```
 
+Java 풀이
 ```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution2 {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int[] arr = new int[5];
+        for(int arr_i=0; arr_i < 5; arr_i++){
+            arr[arr_i] = in.nextInt();
+        }
+        long min = arr[0], max = arr[0];
+        long sum = 0;
+        for(Integer i:arr) {
+        		sum += i;
+        		if(min >i) {
+        			min = i;
+        		}
+        		if(max < i) {
+        			max = i;
+        		}
+        }
+        min = sum - min;
+        max = sum - max;
+        System.out.println(max +" "+ min);
+
+    }
+}
 
 ```
 
