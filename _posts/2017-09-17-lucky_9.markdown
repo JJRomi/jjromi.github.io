@@ -1,8 +1,8 @@
 ---
-title:  "[Algorithm] Grading Students (9/77)"
+title:  "[Lucky Algorithm] Grading Students (9/77)"
 date:   2017-09-17 17:55:23
 categories: [study]
-tags: [algorithm]
+tags: [algorithm][lucky]
 ---
 ## Grading Students
 HackerLand University has the following grading policy:
@@ -16,18 +16,6 @@ If the value of  is less than , no rounding occurs as the result will still be a
 For example,  will be rounded to  but  will not be rounded because the rounding would result in a number that is less than .
 
 Given the initial value of  for each of Sam's  students, write code to automate the rounding process. For each , round it according to the rules above and print the result on a new line.
-
-Input Format
-
-The first line contains a single integer denoting  (the number of students).
-Each line  of the  subsequent lines contains a single integer, , denoting student 's grade.
-
-Constraints
-
-Output Format
-
-For each  of the  grades, print the rounded grade on a new line.
-
 
 ```
 #!/bin/python3

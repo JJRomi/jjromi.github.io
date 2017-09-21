@@ -1,21 +1,12 @@
 ---
-title:  "[Algorithm] Diagonal Difference (3/77)"
+title:  "[Lucky Algorithm] Diagonal Difference (3/77)"
 date:   2017-09-15 11:36:23
 categories: [study]
-tags: [algorithm]
+tags: [algorithm][lucky]
 ---
 ## Diagonal Difference
 
     Given a square matrix of size N X N, calculate the absolute difference between the sums of its diagonals.
-
-    * Input Format
-
-    The first line contains a single integer, N . The next  lines denote the matrix's rows, with each line containing N space-separated integers describing the columns.
-
-    * Output Format
-
-    Print the absolute difference between the two sums of the matrix's diagonals as a single integer.
-
 
 ```
 #!/bin/python3

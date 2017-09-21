@@ -1,8 +1,8 @@
 ---
-title:  "[Algorithm] Compare the Triplets (2/77)"
+title:  "[Lucky Algorithm] Compare the Triplets (2/77)"
 date:   2017-09-15 11:36:23
 categories: [study]
-tags: [algorithm]
+tags: [algorithm][lucky]
 ---
 ## Compare the Triplets
 
@@ -18,16 +18,6 @@ tags: [algorithm]
     Comparison points is the total points a person earned.
 
     Given  and , can you compare the two challenges and print their respective comparison points?
-
-    Input Format
-
-    The first line contains  space-separated integers, , , and , describing the respective values in triplet .
-    The second line contains  space-separated integers, , , and , describing the respective values in triplet .
-
-    Output Format
-
-    Print two space-separated integers denoting the respective comparison points earned by Alice and Bob.
-
 
 ```
 #!/bin/python3

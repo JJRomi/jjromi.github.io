@@ -1,26 +1,13 @@
 ---
-title:  "[Algorithm] Plus Minus (4/77)"
+title:  "[Lucky Algorithm] Plus Minus (4/77)"
 date:   2017-09-15 11:36:23
 categories: [study]
-tags: [algorithm]
+tags: [algorithm][lucky]
 ---
 ## Plus Minus
     Given an array of integers, calculate which fraction of its elements are positive, which fraction of its elements are negative, and which fraction of its elements are zeroes, respectively. Print the decimal value of each fraction on a new line.
 
     Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to  are acceptable.
-
-    Input Format
-
-    The first line contains an integer, , denoting the size of the array.
-    The second line contains  space-separated integers describing an array of numbers .
-
-    Output Format
-
-    You must print the following  lines:
-
-    1. A decimal representing of the fraction of positive numbers in the array compared to its size.
-    2. A decimal representing of the fraction of negative numbers in the array compared to its size.
-    3. A decimal representing of the fraction of zeroes in the array compared to its size.
 
 ```
 #!/bin/python3
@@ -38,6 +25,9 @@ print("%6f"%float(len([a for a in arr if a == 0])/n))
 
 ```
 
+```
+
+```
 
 ##### 행운의 77문제 프로젝트
 ```

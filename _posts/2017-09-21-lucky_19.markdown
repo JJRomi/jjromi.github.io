@@ -1,0 +1,91 @@
+---
+title:  "[Lucky Algorithm] Sock Merchant (19/77)"
+date:   2017-09-21 23:55:23
+categories: [study]
+tags: [algorithm][lucky]
+---
+## Sock Merchant
+John's clothing store has a pile of  loose socks where each sock  is labeled with an integer, , denoting its color. He wants to sell as many socks as possible, but his customers will only buy them in matching pairs. Two socks, and , are a single matching pair if they have the same color ().
+
+Given  and the color of each sock, how many pairs of socks can John sell?
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static int sockMerchant(int n, int[] ar) {
+        int count = 0;
+        HashSet<Integer> socks = new HashSet<Integer>();
+        for(Integer i:ar){
+            if(socks.contains(i)){
+                socks.remove(i);
+                count++;
+            }else{
+                socks.add(i);
+            }
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] ar = new int[n];
+        for(int ar_i = 0; ar_i < n; ar_i++){
+            ar[ar_i] = in.nextInt();
+        }
+        int result = sockMerchant(n, ar);
+        System.out.println(result);
+    }
+}
+
+```
+처음에 HashMap을 이용하여 풀었는데 기존 값이 있는 지 확인할 수 있는 함수가 있는 지 확인해보니 HashSet함수가 있어 수정하였다.
+```
+static int sockMerchant(int n, int[] ar) {
+    int count = 0;
+    Map<Integer, Integer> sock = new HashMap<Integer, Integer>();
+    for(Integer i:ar){
+        if(sock.get(i) == null){
+            sock.put(i, 1);
+        }else{
+            int cnt = sock.get(i);
+            sock.put(i, cnt+1);
+        }
+    }
+    for(Integer i:sock.values()){
+        if(i/2 > 0){
+            count += (i/2);
+        }
+    }
+    return count;
+}
+
+Hashset 함수를 이용하여 아래와 같이 수정
+↓
+
+static int sockMerchant(int n, int[] ar) {
+    int count = 0;
+    HashSet<Integer> socks = new HashSet<Integer>();
+    for(Integer i:ar){
+        if(socks.contains(i)){
+            socks.remove(i);
+            count++;
+        }else{
+            socks.add(i);
+        }
+    }
+    return count;
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```

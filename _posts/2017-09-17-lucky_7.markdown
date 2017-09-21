@@ -1,24 +1,13 @@
 ---
-title:  "[Algorithm] Birthday Cake Candles (7/77)"
+title:  "[Lucky Algorithm] Birthday Cake Candles (7/77)"
 date:   2017-09-17 17:55:23
 categories: [study]
-tags: [algorithm]
+tags: [algorithm][lucky]
 ---
 ## Birthday Cake Candles
 Colleen is turning  years old! Therefore, she has  candles of various heights on her cake, and candle  has height . Because the taller candles tower over the shorter ones, Colleen can only blow out the tallest candles.
 
 Given the  for each individual candle, find and print the number of candles she can successfully blow out.
-
-Input Format
-
-The first line contains a single integer, , denoting the number of candles on the cake.
-The second line contains  space-separated integers, where each integer  describes the height of candle .
-
-Constraints
-
-Output Format
-
-Print the number of candles Colleen blows out on a new line.
 
 ```
 #!/bin/python3
