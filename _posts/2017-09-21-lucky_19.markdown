@@ -2,7 +2,7 @@
 title:  "[Lucky Algorithm] Sock Merchant (19/77)"
 date:   2017-09-21 23:55:23
 categories: [study]
-tags: [algorithm][lucky]
+tags: [algorithm, lucky]
 ---
 ## Sock Merchant
 John's clothing store has a pile of  loose socks where each sock  is labeled with an integer, , denoting its color. He wants to sell as many socks as possible, but his customers will only buy them in matching pairs. Two socks, and , are a single matching pair if they have the same color ().
