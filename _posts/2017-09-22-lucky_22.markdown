@@ -1,0 +1,50 @@
+---
+title:  "[Lucky Algorithm] Counting Valleys (22/77)"
+date:   2017-09-22 23:55:23
+categories: [study]
+tags: [algorithm, lucky]
+---
+## Counting Valleys
+Gary is an avid hiker. He tracks his hikes meticulously, paying close attention to small details like topography. During his last hike, he took exactly  steps. For every step he took, he noted if it was an uphill or a downhill step. Gary's hikes start and end at sea level. We define the following terms:
+
+A mountain is a non-empty sequence of consecutive steps above sea level, starting with a step up from sea level and ending with a step down to sea level.
+A valley is a non-empty sequence of consecutive steps below sea level, starting with a step down from sea level and ending with a step up to sea level.
+Given Gary's sequence of up and down steps during his last hike, find and print the number of valleys he walked through.
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int level = 1;
+        int valleys = 0;
+
+        String str = in.next();
+        for(int i = 0; i < n; i++) {
+            char c = str.charAt(i);
+            if(c == 'U'){
+                if(level < 1 && (level+1) == 1) {
+                    valleys++;
+                }
+                level++;
+            }else{
+                level--;
+            }
+
+        }
+        System.out.println(valleys);
+    }
+}
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```
