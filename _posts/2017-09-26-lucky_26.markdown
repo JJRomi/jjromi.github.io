@@ -1,0 +1,45 @@
+---
+title:  "[Lucky Algorithm] Find Digits(26/77)"
+date:   2017-09-26 23:55:23
+categories: [study]
+tags: [algorithm, lucky]
+---
+## Find Digits
+Given an integer, , traverse its digits (1,2,...,n) and determine how many digits evenly divide  (i.e.: count the number of times  divided by each digit i has a remainder of ). Print the number of evenly divisible digits.
+
+Note: Each digit is considered to be unique, so each occurrence of the same evenly divisible digit should be counted (i.e.: for , the answer is ).
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        for(int a0 = 0; a0 < t; a0++){
+            int result = 0;
+            int n = in.nextInt();
+            String s_n = String.valueOf(n);
+            for(int a1 = 0; a1 < s_n.length(); a1++){
+               int n2 = Character.getNumericValue(s_n.charAt(a1));
+               if(n2 > 0 ) {
+                   if(n%n2 == 0){
+                       result++;
+                   }
+                }
+            }
+            System.out.println(result);
+        }
+    }
+}
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```

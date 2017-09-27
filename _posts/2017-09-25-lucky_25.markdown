@@ -1,0 +1,48 @@
+---
+title:  "[Lucky Algorithm] The Hurdle Race(25/77)"
+date:   2017-09-25 23:55:23
+categories: [study]
+tags: [algorithm, lucky]
+---
+## The Hurdle Race
+Dan is playing a video game in which his character competes in a hurdle race by jumping over  hurdles with heights . He can initially jump a maximum height of  units, but he has an unlimited supply of magic beverages that help him jump higher! Each time Dan drinks a magic beverage, the maximum height he can jump during the race increases by  unit.
+
+Given , , and the heights of all the hurdles, find and print the minimum number of magic beverages Dan must drink to complete the race.
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int k = in.nextInt();
+        int[] height = new int[n];
+        int max = 0;
+        for(int height_i=0; height_i < n; height_i++){
+            height[height_i] = in.nextInt();
+            if(max <= height[height_i]){
+                max = height[height_i];
+            }
+        }
+        int result = max - k;
+        if(result >= 0){
+            System.out.println(result);
+        }else{
+            System.out.println(0);
+        }
+    }
+}
+
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```

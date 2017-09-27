@@ -1,0 +1,42 @@
+---
+title:  "[Lucky Algorithm] CamelCase(28/77)"
+date:   2017-09-26 23:55:23
+categories: [study]
+tags: [algorithm, lucky]
+---
+## CamelCase
+Alice wrote a sequence of words in CamelCase as a string of letters, , having the following properties:
+
+It is a concatenation of one or more words consisting of English letters.
+All letters in the first word are lowercase.
+For each of the subsequent words, the first letter is uppercase and rest of the letters are lowercase.
+Given , print the number of words in  on a new line.
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String s = in.next();
+        int result = 1;
+        for(int i = 0; i < s.length(); i++){
+            char a = s.charAt(i);
+            if(Character.isUpperCase(a) == true){
+                result++;
+            }
+        }
+        System.out.println(result);
+    }
+}
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```
