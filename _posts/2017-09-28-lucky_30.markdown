@@ -1,0 +1,53 @@
+---
+title:  "[Lucky Algorithm] HackerRank in a String!(30/77)"
+date:   2017-09-28 23:55:23
+categories: [study]
+tags: [algorithm, lucky]
+---
+## HackerRank in a String!
+We say that a string, , contains the word hackerrank if a subsequence of the characters in  spell the word hackerrank. For example, haacckkerrannkk does contain hackerrank, but haacckkerannk does not (the characters all appear in the same order, but it's missing a second r).
+
+More formally, let  be the respective indices of h, a, c, k, e, r, r, a, n, k in string . If  is true, then  contains hackerrank.
+
+You must answer  queries, where each query consists of a string, . For each query, print YES on a new line if contains hackerrank; otherwise, print NO instead.
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int q = in.nextInt();
+        String str = "hackerrank";
+
+        for(int a0 = 0; a0 < q; a0++){
+            String s = in.next();
+            String result = "NO";
+            int str_i = 0;
+            if(s.length() < str.length()){
+                result = "NO";
+            }else{
+                for(int i = 0; i < s.length(); i++){
+                    if(s.charAt(i) == str.charAt(str_i) && str_i < str.length()-1){
+                        str_i++;
+                    }
+                }
+                if(str_i == str.length()-1){
+                    result = "YES";
+                }    
+            }
+            System.out.println(result);
+        }
+    }
+}
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```
