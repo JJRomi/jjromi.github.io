@@ -1,6 +1,6 @@
 ---
 title:  "[Lucky Algorithm] Pangrams(31/77)"
-date:   2017-09-26 23:55:23
+date:   2017-09-28 23:55:23
 categories: [study]
 tags: [algorithm, lucky]
 ---
