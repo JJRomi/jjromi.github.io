@@ -1,0 +1,67 @@
+---
+title:  "[Lucky Algorithm] Sherlock and the Valid String(33/77)"
+date:   2017-10-05 23:55:23
+categories: [study]
+tags: [algorithm, lucky]
+---
+## Sherlock and the Valid String
+Sherlock considers a string, , to be valid if either of the following conditions are satisfied:
+
+All characters in  have the same exact frequency (i.e., occur the same number of times). For example,  is valid, but  is not valid.
+Deleting exactly  character from  will result in all its characters having the same frequency. For example,  and  are valid because all their letters will have the same frequency if we remove occurrence of c, but  is not valid because we'd need to remove  characters.
+Given , can you determine if it's valid or not? If it's valid, print YES on a new line; otherwise, print NO instead.
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static String isValid(String s){
+        HashMap<Character, Integer> count_char = new HashMap<Character, Integer>();
+        int del_count = 0;
+        String result = "YES";
+
+        for(int i = 0; i < s.length(); i++){
+            if(count_char.containsKey(s.charAt(i))){
+                count_char.put(s.charAt(i), count_char.get(s.charAt(i)) +1 );
+            }else{
+                count_char.put(s.charAt(i), 1);        
+            }
+        }
+        int current = 0;
+        for (Map.Entry<Character, Integer> count : count_char.entrySet()){
+            if(current == 0){
+                current = count.getValue();
+            }else{
+                int diff = Math.abs(current - count.getValue());
+                if(count.getValue() > 1 && diff > 0){
+                    del_count += diff;
+                }else if(count.getValue() == 1 && diff > 0){
+                    del_count++;
+                }
+            }
+        }
+        if(del_count > 1){
+            result = "NO";
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String s = in.next();
+        String result = isValid(s);
+        System.out.println(result);
+    }
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```

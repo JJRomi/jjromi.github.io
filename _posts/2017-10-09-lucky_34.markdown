@@ -1,0 +1,47 @@
+---
+title:  "[Lucky Algorithm] The Power Sum(34/77)"
+date:   2017-10-09 23:55:23
+categories: [study]
+tags: [algorithm, lucky]
+---
+## The Power Sum
+Find the number of ways that a given integer, , can be expressed as the sum of the  power of unique, natural numbers.
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static int powerSum(int x, int n, int p){
+        x = x - (int)Math.pow(p, n);
+        if(x < 0){
+            return 0;
+        }else if(x == 0){
+            return 1;
+        }else{
+            int sum = 0;
+            for(int i = p + 1; Math.pow(i, n) <= x; i++){
+                sum += powerSum(x, n, i);
+            }
+            return sum;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        int x = in.nextInt();
+        int n = in.nextInt();
+        int result = powerSum(x, n, 0);
+        System.out.println(result);
+    }
+}
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```

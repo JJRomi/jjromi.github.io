@@ -1,0 +1,47 @@
+---
+title:  "[Lucky Algorithm] Game of Stones(32/77)"
+date:   2017-10-02 23:55:23
+categories: [study]
+tags: [algorithm, lucky]
+---
+## Game of Stones
+Two players (numbered  and ) are playing a game with  stones. Player  always plays first, and the two players move in alternating turns. The game's rules are as follows:
+
+In a single move, a player can remove either , , or  stones from the game board.
+If a player is unable to make a move, that player loses the game.
+Given the number of stones, find and print the name of the winner (i.e.,  or ) on a new line. Each player plays optimally, meaning they will not make a move that causes them to lose the game if some better, winning move exists.
+
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        for(int i = 0; i < t; i++){
+           int n = in.nextInt();
+           if(n == 1){
+               System.out.println("Second");
+           }else if(n < 7){
+               System.out.println("First");
+           }else{
+               if(n%7 <= 1){
+                   System.out.println("Second");
+               }else{
+                   System.out.println("First");
+               }
+           }
+        }
+    }
+}
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```

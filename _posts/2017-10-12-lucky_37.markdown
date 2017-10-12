@@ -1,0 +1,75 @@
+---
+title:  "[Lucky Algorithm] Insertion Sort - Part 1(37/77)"
+date:   2017-10-12 23:55:23
+categories: [study]
+tags: [algorithm, lucky]
+---
+## Insertion Sort - Part 1
+Sorting
+One common task for computers is to sort data. For example, people might want to see all their files on a computer sorted by size. Since sorting is a simple problem with many different possible solutions, it is often used to introduce the study of algorithms.
+
+Insertion Sort
+These challenges will cover Insertion Sort, a simple and intuitive sorting algorithm. We will first start with an already sorted list.
+
+Insert element into sorted list
+Given a sorted list with an unsorted number  in the rightmost cell, can you write some simple code to insert  into the array so that it remains sorted?
+
+Print the array every time a value is shifted in the array until the array is fully sorted. The goal of this challenge is to follow the correct order of insertion sort.
+
+Guideline: You can copy the value of  to a variable and consider its cell "empty". Since this leaves an extra cell empty on the right, you can shift everything over until  can be inserted. This will create a duplicate of each value, but when you reach the right spot, you can replace it with .
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void insertIntoSorted(int[] ar){
+        int length = ar.length - 2;
+        int unsorted = ar[length+1];
+
+        while(unsorted > 0){
+            if(ar[length] < unsorted){
+                ar[length+1] = unsorted;
+                unsorted = 0;
+            }else{
+                ar[length+1] = ar[length];
+                if(length == 0 && unsorted > 0){
+                    printArray(ar);
+                    ar[length] = unsorted;
+                    unsorted = 0;
+                }
+                length--;
+            }
+            printArray(ar);
+        }
+    }
+
+/* Tail starts here */
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int s = in.nextInt();
+        int[] ar = new int[s];
+        for(int i=0;i<s;i++){
+            ar[i]=in.nextInt();
+        }
+        insertIntoSorted(ar);
+    }
+
+
+    private static void printArray(int[] ar) {
+        for(int n: ar){
+            System.out.print(n+" ");
+        }
+        System.out.println("");
+    }
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```

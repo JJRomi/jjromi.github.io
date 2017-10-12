@@ -1,0 +1,65 @@
+---
+title:  "[Lucky Algorithm] Weighted Uniform Strings(35/77)"
+date:   2017-10-11 23:55:23
+categories: [study]
+tags: [algorithm, lucky]
+---
+## Weighted Uniform Strings
+A weighted string is a string of lowercase English letters where each letter has a weight in the inclusive range from  to , defined below:
+
+image
+
+We define the following terms:
+
+The weight of a string is the sum of the weights of all the string's characters. For example:
+
+image
+
+A uniform string is a string consisting of a single character repeated zero or more times. For example, ccc and a are uniform strings, but bcb and cd are not (i.e., they consist of more than one distinct character).
+Given a string, , let  be the set of weights for all possible uniform substrings (contiguous) of string . You have to answer  queries, where each query  consists of a single integer, . For each query, print Yes on a new line if ; otherwise, print No instead.
+
+Note: The  symbol denotes that  is an element of set .
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String s = in.next();
+        int n = in.nextInt();
+        Set<Integer> weight = new HashSet<Integer>();
+        int count = 1;
+        int last = 0;
+        for(int i = 0; i < s.length(); i++){
+            int current = (int)s.charAt(i) - 96;
+            if(current == last){
+                count++;
+            }else{
+                count = 1;
+                last = current;
+            }
+            weight.add(last*count);
+        }
+        for(int a0 = 0; a0 < n; a0++){
+            int x = in.nextInt();
+            if(weight.contains(x)){
+                System.out.println("Yes");
+            }else{
+                System.out.println("No");
+            }
+
+        }
+
+    }
+}
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```
