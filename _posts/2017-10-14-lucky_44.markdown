@@ -1,0 +1,48 @@
+---
+title:  "[Lucky Algorithm] Find the Median(44/77)"
+date:   2017-10-14 23:55:23
+categories: [study]
+tags: [algorithm, lucky]
+---
+## Find the Median
+Given a list of numbers, can you find the median?
+
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void sorted(int[] unsorted){
+        for(int i = 1; i < unsorted.length; i++){
+            int j = i;
+            int min = unsorted[i];
+            while(j > 0 && min < unsorted[j-1]){
+                int tmp = unsorted[j];
+                unsorted[j] = unsorted[j-1];
+                unsorted[j-1] = tmp;
+                j--;
+            }
+        }
+    }
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] ar = new int[n];
+        for(int i = 0; i < n; i++){
+            ar[i] = in.nextInt();
+        }
+        sorted(ar);
+        int result = ar[ar.length/2];
+        System.out.println(result);
+    }
+}
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```

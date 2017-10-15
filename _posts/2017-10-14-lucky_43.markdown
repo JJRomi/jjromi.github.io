@@ -1,0 +1,91 @@
+---
+title:  "[Lucky Algorithm] Closest Number(43/77)"
+date:   2017-10-14 23:55:23
+categories: [study]
+tags: [algorithm, lucky]
+---
+## Closest Number
+Sorting is often useful as the first step in many different tasks. The most common task is to make finding things easier, but there are other uses, as well.
+
+Challenge
+Given a list of unsorted integers, , can you find the pair of elements that have the smallest absolute difference between them? If there are multiple pairs, find them all.
+
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+   public static int partition(int[] ar, int left, int right) {
+        int p = ar[left];
+        while(left < right){
+            while(ar[left] < p){
+                left++;
+            }
+            while(ar[right] > p){
+                right--;
+            }
+            int tmp = ar[left];
+            ar[left] = ar[right];
+            ar[right] = tmp;
+        }
+
+        return left;
+    }
+    public static void quickSort(int[] ar, int left, int right){
+        if(ar == null || ar.length == 0){
+            return;
+        }
+        if(left >= right){
+            return;
+        }
+        int p = partition(ar, left, right);
+        quickSort(ar, left, p);
+        quickSort(ar, p+1, right);
+    }
+
+    public static List<Integer> closestNumbers(int[] sorted){
+        List<Integer> result = new ArrayList<Integer>();
+        int leng = sorted.length - 1;
+        int min = Math.abs(sorted[0] - sorted[leng]);
+         for(int i = 0; i < leng; i++){
+            int diff = Math.abs(sorted[i] - sorted[i+1]);
+            if(min > diff){
+                result.clear();
+                result.add(sorted[i]);
+                result.add(sorted[i+1]);
+                min = diff;
+            }else if(min == diff){
+                result.add(sorted[i]);
+                result.add(sorted[i+1]);
+            }
+        }
+
+        return result;
+    }
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] arr = new int[n];
+        List<Integer> result = new ArrayList<Integer>();
+        for(int i = 0; i < n; i++){
+            arr[i] = in.nextInt();
+        }
+        quickSort(arr, 0, arr.length-1);
+        result = closestNumbers(arr);
+        for(int j = 0; j < result.size(); j++){
+            System.out.print(result.get(j) + " ");
+        }
+
+
+    }
+}
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```
