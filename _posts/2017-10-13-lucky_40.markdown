@@ -1,0 +1,49 @@
+---
+title:  "[Lucky Algorithm] Counting Sort 1(40/77)"
+date:   2017-10-13 23:55:23
+categories: [study]
+tags: [algorithm, lucky]
+---
+## Counting Sort 1
+Comparison Sorting
+Quicksort usually has a running time of , but is there an algorithm that can sort even faster? In general, this is not possible. Most sorting algorithms are comparison sorts, i.e. they sort a list just by comparing the elements to one another. A comparison sort algorithm cannot beat  (worst-case) running time, since  represents the minimum number of comparisons needed to know where to place each element. For more details, you can see these notes (PDF).
+
+Alternative Sorting
+However, for certain types of input, it is more efficient to use a non-comparison sorting algorithm. This will make it possible to sort lists even in linear time. These challenges will cover Counting Sort, a fast way to sort lists where the elements have a small number of possible values, such as integers within a certain range. We will start with an easy task - counting.
+
+Challenge
+Given a list of integers, can you count and output the number of times each value appears?
+
+Hint: There is no need to sort the data, you just need to count it.
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] ar = new int[n];
+        int[] count = new int[100];
+        for(int i = 0; i < n; i++){
+            ar[i] = in.nextInt();
+            int k = ar[i];
+            count[k]++;
+        }
+        for(int j = 0; j < 100; j++){
+           System.out.print(count[j] + " ");
+        }
+
+    }
+}
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+```
