@@ -1,5 +1,5 @@
 ---
-title:  "[여개모각코] 1기 알파팀 모각코 후기"
+title:  "[여개모각코] 1기 알파팀 후기"
 date:   2017-10-15 11:00:00
 categories: [study]
 tags: [yeogeamogaco, alpha]
