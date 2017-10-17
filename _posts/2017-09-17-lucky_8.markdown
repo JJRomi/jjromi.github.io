@@ -2,9 +2,9 @@
 title:  "[Lucky Algorithm] Time Conversion (8/77)"
 date:   2017-09-17 17:55:23
 categories: [study]
-tags: [algorithm, lucky]
+tags: [algorithm, lucky, hackerrank]
 ---
-## Staircase
+## Staircase (Hacker Rank)
 Given a time in -hour AM/PM format, convert it to military (-hour) time.
 
 Note: Midnight is  on a -hour clock, and  on a -hour clock. Noon is  on a -hour clock, and  on a -hour clock.
@@ -34,5 +34,5 @@ print(result)
 
 ##### 행운의 77문제 프로젝트
 ```
-  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
 ```

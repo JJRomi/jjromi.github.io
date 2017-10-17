@@ -2,9 +2,9 @@
 title:  "[Lucky Algorithm] Day of the Programmer (20/77)"
 date:   2017-09-21 23:55:23
 categories: [study]
-tags: [algorithm, lucky]
+tags: [algorithm, lucky, hackerrank]
 ---
-## Day of the Programmer
+## Day of the Programmer (Hacker Rank)
 Marie invented a Time Machine and wants to test it by time-traveling to visit Russia on the Day of the Programmer (the day of the year) during a year in the inclusive range from to .
 
 From to , Russia's official calendar was the Julian calendar; since they used the Gregorian calendar system. The transition from the Julian to Gregorian calendar system occurred in , when the next day after January was February . This means that in , February was the day of the year in Russia.
@@ -61,5 +61,5 @@ public class Solution {
 
 ##### 행운의 77문제 프로젝트
 ```
-  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
 ```

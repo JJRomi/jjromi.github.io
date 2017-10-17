@@ -2,9 +2,9 @@
 title:  "[Lucky Algorithm] Counting Sort 1(40/77)"
 date:   2017-10-13 23:55:23
 categories: [study]
-tags: [algorithm, lucky]
+tags: [algorithm, lucky, hackerrank]
 ---
-## Counting Sort 1
+## Counting Sort 1 (Hacker Rank)
 Comparison Sorting
 Quicksort usually has a running time of , but is there an algorithm that can sort even faster? In general, this is not possible. Most sorting algorithms are comparison sorts, i.e. they sort a list just by comparing the elements to one another. A comparison sort algorithm cannot beat  (worst-case) running time, since  represents the minimum number of comparisons needed to know where to place each element. For more details, you can see these notes (PDF).
 
@@ -45,5 +45,5 @@ public class Solution {
 
 ##### 행운의 77문제 프로젝트
 ```
-  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
 ```

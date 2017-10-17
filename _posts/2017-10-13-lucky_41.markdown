@@ -2,9 +2,9 @@
 title:  "[Lucky Algorithm] Counting Sort 2(41/77)"
 date:   2017-10-13 23:55:23
 categories: [study]
-tags: [algorithm, lucky]
+tags: [algorithm, lucky, hackerrank]
 ---
-## Counting Sort 1
+## Counting Sort 1 (Hacker Rank)
 Often, when a list is sorted, the elements being sorted are just keys to other values. For example, if you are sorting files by their size, the sizes need to stay connected to their respective files. You cannot just take the size numbers and output them in order, you need to output all the required file information.
 
 However, if you are not concerned about any other information, then you can simply sort those numbers alone. This makes counting sort very simple. If you already counted the values in the list, you don't need to access the original list again. This challenge involves a simple counting sort where the elements being sorted are all that matter.
@@ -44,5 +44,5 @@ public class Solution {
 
 ##### 행운의 77문제 프로젝트
 ```
-  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
 ```

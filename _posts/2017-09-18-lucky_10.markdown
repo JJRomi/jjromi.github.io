@@ -2,9 +2,9 @@
 title:  "[Lucky Algorithm] Apple and Orange (10/77)"
 date:   2017-09-18 17:55:23
 categories: [study]
-tags: [algorithm, lucky]
+tags: [algorithm, lucky, hackerrank]
 ---
-## Apple and Orange
+## Apple and Orange (Hacker Rank)
 
 Sam's house has an apple tree and an orange tree that yield an abundance of fruit. In the diagram below, the red region denotes his house, where  is the start point and  is the end point. The apple tree is to the left of his house, and the orange tree is to its right. You can assume the trees are located on a single point, where the apple tree is at point  and the orange tree is at point .
 
@@ -31,5 +31,5 @@ oranges = [int(orange_temp) for orange_temp in input().strip().split(' ')]
 
 ##### 행운의 77문제 프로젝트
 ```
-  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
 ```

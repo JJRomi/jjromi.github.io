@@ -2,9 +2,9 @@
 title:  "[Lucky Algorithm] Closest Number(43/77)"
 date:   2017-10-14 23:55:23
 categories: [study]
-tags: [algorithm, lucky]
+tags: [algorithm, lucky, hackerrank]
 ---
-## Closest Number
+## Closest Number (Hacker Rank)
 Sorting is often useful as the first step in many different tasks. The most common task is to make finding things easier, but there are other uses, as well.
 
 Challenge
@@ -87,5 +87,5 @@ public class Solution {
 
 ##### 행운의 77문제 프로젝트
 ```
-  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
 ```

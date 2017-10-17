@@ -2,9 +2,9 @@
 title:  "[Lucky Algorithm] Game of Stones(32/77)"
 date:   2017-10-02 23:55:23
 categories: [study]
-tags: [algorithm, lucky]
+tags: [algorithm, lucky, hackerrank]
 ---
-## Game of Stones
+## Game of Stones (Hacker Rank)
 Two players (numbered  and ) are playing a game with  stones. Player  always plays first, and the two players move in alternating turns. The game's rules are as follows:
 
 In a single move, a player can remove either , , or  stones from the game board.
@@ -43,5 +43,5 @@ public class Solution {
 
 ##### 행운의 77문제 프로젝트
 ```
-  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
 ```

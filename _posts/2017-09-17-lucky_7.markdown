@@ -2,9 +2,9 @@
 title:  "[Lucky Algorithm] Birthday Cake Candles (7/77)"
 date:   2017-09-17 17:55:23
 categories: [study]
-tags: [algorithm, lucky]
+tags: [algorithm, lucky, hackerrank]
 ---
-## Birthday Cake Candles
+## Birthday Cake Candles (Hacker Rank)
 Colleen is turning  years old! Therefore, she has  candles of various heights on her cake, and candle  has height . Because the taller candles tower over the shorter ones, Colleen can only blow out the tallest candles.
 
 Given the  for each individual candle, find and print the number of candles she can successfully blow out.
@@ -26,5 +26,5 @@ print(result)
 
 ##### 행운의 77문제 프로젝트
 ```
-  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제를 77개를 푸는 프로젝트입니다.
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
 ```
