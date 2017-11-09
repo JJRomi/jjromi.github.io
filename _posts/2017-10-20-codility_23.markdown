@@ -7,7 +7,7 @@ tags: [algorithm, codility]
 ## [Lesson8] Leader
 ### Dominator
 
-- Task Score : 91
+#### Task Score : 91
 Correctness : 87 	Performance : 100
 ```
 import java.util.*;
@@ -47,7 +47,7 @@ class Solution {
     }
 }
 ```
-- Task Score : 100  
+#### Task Score : 100  
 ```
 import java.util.*;
 

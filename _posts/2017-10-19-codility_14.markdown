@@ -9,7 +9,7 @@ tags: [algorithm, codility]
 ---
 Java Solution
 
-- Task Score : 62  
+#### Task Score : 62  
 Correctness : 100 	Performance : 0
 ```
 import java.util.*;
@@ -38,7 +38,7 @@ class Solution {
     }
 }
 ```
-- Task Score : 100  
+#### Task Score : 100  
 ```
 class Solution {
     public int[] solution(String S, int[] P, int[] Q) {

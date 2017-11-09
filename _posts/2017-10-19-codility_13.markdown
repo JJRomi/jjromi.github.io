@@ -8,7 +8,7 @@ tags: [algorithm, codility]
 ###  MinAvgTwoSlice : Find the minimal average of any slice containing at least two elements.  
 ---
 Java Solution
-- Task Score : 80  
+#### Task Score : 80  
 Correctness : 100 	Performance : 60  
 ```
 class Solution {
@@ -29,7 +29,7 @@ class Solution {
     }
 }
 ```
-- Task Score : 100  
+#### Task Score : 100  
 ```
 class Solution {
     public int solution(int[] A) {

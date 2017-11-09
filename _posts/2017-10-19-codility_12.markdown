@@ -8,7 +8,7 @@ tags: [algorithm, codility]
 ###  PassingCars : Count the number of passing cars on the road.  
 ---
 Java Solution
-- Task Score : 90   
+#### Task Score : 90   
 Correctness : 100 	Performance : 80  
 ```
 class Solution {
@@ -31,7 +31,7 @@ class Solution {
     }
 }
 ```
-- Task Score : 100  
+#### Task Score : 100  
 ```
 class Solution {
     public int solution(int[] A) {

@@ -7,8 +7,9 @@ tags: [algorithm, codility]
 ## [Lesson10] Prime and composite numbers  
 ###  Flags : Find the maximum number of flags that can be set on mountain peaks.  
 
-- Task Score : 40
+#### Task Score : 40
 Correctness : 75 	Performance : 0
+
 ```
 import java.util.*;
 
@@ -29,7 +30,8 @@ class Solution {
 }
 
 ```
-- Task Score : 100  
+
+#### Task Score : 100  
 ```
 import java.util.*;
 

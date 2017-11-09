@@ -7,7 +7,7 @@ tags: [algorithm, codility]
 ## [Lesson10] Prime and composite numbers  
 ###  CountFactors
 
-- Task Score : 92
+#### Task Score : 92
 Correctness : 100 	Performance : 83
 ```
 class Solution {
@@ -27,7 +27,7 @@ class Solution {
 }
 
 ```
-- Task Score : 100  
+#### Task Score : 100  
 ```
 import java.util.*;
 
