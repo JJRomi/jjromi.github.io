@@ -1,4 +1,4 @@
- ---
+---
 title:  "[Codility Lessons] Fish"
 date:   2017-10-20 23:55:23
 categories: [study]

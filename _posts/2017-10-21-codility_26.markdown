@@ -1,4 +1,4 @@
- ---
+---
 title:  "[Codility Lessons] MaxProfit"
 date:   2017-10-21 23:55:23
 categories: [study]
