@@ -1,5 +1,5 @@
 ---
-title:  "[Codility Lessons] CyclicRotation"
+title:  "[Codility Lessons] CyclicRotation(3/n)"
 date:   2017-10-17 23:55:23
 categories: [study]
 tags: [algorithm, codility]

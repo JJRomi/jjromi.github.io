@@ -1,5 +1,5 @@
 ---
-title:  "[Codility Lessons] FrogRiverOne"
+title:  "[Codility Lessons] FrogRiverOne(8/n)"
 date:   2017-10-18 23:55:23
 categories: [study]
 tags: [algorithm, codility]

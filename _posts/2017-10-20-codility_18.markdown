@@ -1,5 +1,5 @@
 ---
-title:  "[Codility Lessons] StoneWall"
+title:  "[Codility Lessons] StoneWall(18/n)"
 date:   2017-10-20 23:55:23
 categories: [study]
 tags: [algorithm, codility]

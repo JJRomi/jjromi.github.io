@@ -1,5 +1,5 @@
 ---
-title:  "[Codility Lessons] PermMissingElem"
+title:  "[Codility Lessons] PermMissingElem(5/n)"
 date:   2017-10-18 23:55:23
 categories: [study]
 tags: [algorithm, codility]

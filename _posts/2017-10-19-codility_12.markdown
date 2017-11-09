@@ -1,5 +1,5 @@
 ---
-title:  "[Codility Lessons] PassingCars"
+title:  "[Codility Lessons] PassingCars(12/n)"
 date:   2017-10-19 23:55:23
 categories: [study]
 tags: [algorithm, codility]

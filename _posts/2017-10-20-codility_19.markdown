@@ -1,5 +1,5 @@
 ---
-title:  "[Codility Lessons] Brackets"
+title:  "[Codility Lessons] Brackets(19/n)"
 date:   2017-10-20 23:55:23
 categories: [study]
 tags: [algorithm, codility]

@@ -1,5 +1,5 @@
 ---
-title:  "[Codility Lessons] Fish"
+title:  "[Codility Lessons] Fish(22/n)"
 date:   2017-10-20 23:55:23
 categories: [study]
 tags: [algorithm, codility]
