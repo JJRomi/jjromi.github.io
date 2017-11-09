@@ -1,0 +1,68 @@
+---
+title:  "[Codility Lessons] MaxProductOfThree"
+date:   2017-10-19 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson6] Sorting  
+### MaxProductOfThree : Maximize A[P] * A[Q] * A[R] for any triplet (P, Q, R).  
+---
+Java Solution  
+
+- Task Score : 88
+Correctness : 75 	Performance : 100
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int[] A) {
+        // 배열 A 정렬
+        Arrays.sort(A);
+        int n = A.length-1;
+        int result = 0;
+        // 마이너스 값이 있으므로 처음 2개의 값과 끝 2개의 값 비교하여 값 구함
+        if(A[0]*A[1] > A[n-2]*A[n-1]){
+            result = A[0]*A[1]*A[n];
+        }else{
+            result = A[n] * A[n-1] * A[n-2];
+        }
+        return result;
+    }
+}
+
+```
+- Task Score : 100  
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int[] A) {
+        Arrays.sort(A);
+        int n = A.length-1;
+        int result = 0;
+        // 마지막 값이 0보다 큰 지 확인 필요
+        if(A[0]*A[1] > A[n-2]*A[n-1] && A[n] > 0){
+            result = A[0]*A[1]*A[n];
+        }else{
+            result = A[n] * A[n-1] * A[n-2];
+        }
+        return result;
+    }
+}
+```
+
+---
+PHP Solution
+```
+function solution($A) {
+    sort($A);
+    $n = count($A)-1;
+    $result = 0;
+    if($A[0]*$A[1] > $A[$n-2]*$A[$n-1] && $A[$n] > 0){
+        $result = $A[0]*$A[1]*$A[$n];
+    }else{
+        $result = $A[$n]*$A[$n-1]*$A[$n-2];
+    }
+    return $result;
+}
+```

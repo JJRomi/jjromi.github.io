@@ -1,0 +1,26 @@
+ ---
+title:  "[Codility Lessons] MinPerimeterRectangle"
+date:   2017-10-21 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson10] Prime and composite numbers  
+###  MinPerimeterRectangle  
+
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int N) {
+        int i = 1;
+        int min = Integer.MAX_VALUE;
+        while(i*i <= N){
+            if(N%i == 0){
+                min = Math.min(min, 2*((N/i)+i));    
+            }
+            i++;
+        }
+        return min;
+    }
+}
+```

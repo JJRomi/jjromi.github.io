@@ -1,0 +1,110 @@
+---
+title:  "[Codility Lessons]  MissingInteger"
+date:   2017-10-18 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson4] Counting Elements  
+###  MaxCounters : Calculate the values of counters after applying all alternating operations: increase counter by 1; set value of all counters to current maximum.  
+
+---
+Java solution
+
+- Task Score : 77  
+Correctness : 100 	Performance : 60
+```
+import java.util.*;
+import java.lang.*;
+
+class Solution {
+    public int[] solution(int N, int[] A) {
+        int[] arr = new int[N];
+        int max = 0;
+        for(int i = 0; i < A.length; i++){
+            int val = A[i];
+            // A 배열의 수가 N보다 클 경우 arr 배열의 수 전체를 현재 최대값으로 변경
+            if(val > N){
+                Arrays.fill(arr, max);
+            }else{
+                // val 번째 값 +1
+                arr[val-1]++;
+                // 최대값 구하기
+                if(max < arr[val-1]){
+                    max = arr[val-1];
+                }
+            }
+        }
+        return arr;
+    }
+}
+```
+- Task Score : 100  
+```
+class Solution {
+    public int[] solution(int N, int[] A) {
+        int[] arr = new int[N];
+        int max = 0;
+        int tmp_max = 0;
+        for(int i = 0; i < A.length; i++){
+            int val = A[i];
+            if(val > N){
+                // 현재 최대값 구하기
+                if(max < tmp_max){
+                    max = tmp_max;   
+                }
+            }else{
+                // 최대값보다 작을 경우 최대값으로 변경
+                if(arr[val-1] < max){
+                    arr[val-1] = max;    
+                }
+                // val 번째 값 +1
+                arr[val-1]++;
+                if(tmp_max < arr[val-1]){
+                    tmp_max = arr[val-1];   
+                }
+            }
+        }
+
+        for(int i = 0; i < arr.length; i++){
+            // 최대값보다 작은 값들 최대값으로 변경
+            if(arr[i] < max){
+                arr[i] = max;
+            }    
+        }
+        return arr;
+    }
+}
+```
+
+---
+PHP Solution
+
+```
+function solution($N, $A) {
+    $arr = array_fill(0, $N, 0);
+    $max = 0;
+    $tmp_max = 0;
+    for($i = 0; $i < count($A); $i++){
+        $val = $A[$i];
+        if($val > $N){
+            if($max < $tmp_max){
+                $max = $tmp_max;    
+            }    
+        }else{
+            if($arr[$val-1] < $max){
+                $arr[$val-1] = $max;    
+            }
+            $arr[$val-1]++;
+            if($tmp_max < $arr[$val-1]){
+                $tmp_max = $arr[$val-1];    
+            }
+        }
+    }
+    for($i = 0; $i < count($arr); $i++){
+        if($arr[$i] < $max){
+            $arr[$i] = $max;    
+        }
+    }
+    return $arr;
+}
+```

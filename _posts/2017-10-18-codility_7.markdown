@@ -1,0 +1,70 @@
+---
+title:  "[Codility Lessons] PermCheck"
+date:   2017-10-18 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson4] Counting Elements  
+### PermCheck : Check whether array A is a permutation.  
+
+---
+Java Solution
+
+```
+import java.lang.Math;
+import java.util.HashSet;
+class Solution {
+    public int solution(int[] A) {
+        HashSet<Integer> arr = new HashSet<Integer>();
+        int flag = 1;
+        int sum = 0;
+        int max = 0;
+        for(int i = 0; i < A.length; i++){
+            sum += A[i];
+            if(max < A[i]){
+                max = A[i];
+            }
+            // A 배열의 값이 중복되면 순열이 아님
+            if(arr.contains(A[i])){
+                return 0;
+            }else{
+                arr.add(A[i]);
+            }
+        }
+        // 1~최대값의 합과 A 배열의 합이 값으면 순열
+        int total = max * (max+1)/2;
+        if(Math.abs(total-sum) > 0){
+            flag = 0;
+        }
+        return flag;
+    }
+}
+```
+
+---
+PHP Solution
+
+```
+function solution($A) {
+    $arr = array();
+    $flag = 1;
+    $sum = 0;
+    $max = 0;
+    foreach($A as $value){
+        $sum += $value;
+        if($max < $value){
+            $max = $value;    
+        }
+        if(isset($arr[$value])){
+            return 0;    
+        }else{
+            $arr[$value] = $value;  
+        }
+    }
+    $total = $max*($max+1)/2;
+    if(abs($total-$sum) > 0){
+        $flag = 0;    
+    }
+    return $flag;
+}
+```

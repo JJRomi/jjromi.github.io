@@ -1,0 +1,53 @@
+---
+title:  "[Codility Lessons]  MissingInteger"
+date:   2017-10-18 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson4] Counting Elements  
+###  MissingInteger : Find the smallest positive integer that does not occur in a given sequence.  
+
+---
+Java Solution
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int[] A) {
+        HashSet<Integer> arr = new HashSet<Integer>();
+        // A 배열을 arr HashSet에 입력
+        for(int i = 0; i < A.length; i++){
+            if(A[i] > 0){
+                arr.add(A[i]);    
+            }  
+        }
+        // A 배열에 있는 순열 값 + 1 리턴
+        for(int i = 1; i <= arr.size(); i++){
+            if(!arr.contains(i)){
+                return i;
+            }
+        }
+        // A 배열 순열일 경우 크기 + 1 리턴
+        return arr.size()+1;
+    }
+}
+```
+---
+PHP Solution
+
+```
+function solution($A) {
+    $arr = array();
+    foreach($A as $value){
+        if($value > 0 && !isset($arr[$value])){
+            $arr[$value] = $value;
+        }    
+    }
+    for($i = 1; $i <= count($arr); $i++){
+        if(!isset($arr[$i])){
+            return $i;    
+        }
+    }
+    return count($arr)+1;
+}
+```

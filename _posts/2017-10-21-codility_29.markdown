@@ -1,0 +1,49 @@
+ ---
+title:  "[Codility Lessons] CountFactors(29/n)"
+date:   2017-10-21 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson10] Prime and composite numbers  
+###  CountFactors
+
+- Task Score : 92
+Correctness : 100 	Performance : 83
+```
+class Solution {
+    public int solution(int N) {
+        int result = 0;
+        int i = 1;
+        for(i = 1; i*i < N; i++){
+            if(N%i == 0){
+                result += 2;    
+            }
+        }
+        if(i*i == N){
+            result += 1;    
+        }
+        return result;
+    }
+}
+
+```
+- Task Score : 100  
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int N) {
+        int result = 0;
+        int i = 1;
+        for(i = 1; i < (double)Math.sqrt(N); i++){
+            if(N%i == 0){
+                result += 2;    
+            }
+        }
+        if(Math.pow(i, 2) == N){
+            result += 1;    
+        }
+        return result;
+    }
+}
+```

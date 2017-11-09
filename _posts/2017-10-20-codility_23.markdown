@@ -1,0 +1,88 @@
+ ---
+title:  "[Codility Lessons] Dominator"
+date:   2017-10-20 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson8] Leader
+### Dominator
+
+- Task Score : 91
+Correctness : 87 	Performance : 100
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int[] A) {
+        int count = 0;
+        int dominator = 0;
+        int result = -1;
+        for(int i = 0; i < A.length; i++){
+            if(count == 0){
+                count++;
+                dominator=A[i];
+                result = i;
+            }else{
+            if(dominator != A[i]){
+                    count--;
+                }else{
+                    count++;
+                    result = i;
+                }
+            }
+        }
+        if(count <= 0){
+            return -1;   
+        }
+        count = 0;
+        for(int i = 0; i < A.length; i++){
+            if(A[i] == dominator){
+                count++;
+            }
+        }
+        if(count < A.length/2){
+            return -1;
+        }
+        return result;
+    }
+}
+```
+- Task Score : 100  
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int[] A) {
+        int count = 0;
+        int dominator = 0;
+        int result = -1;
+        for(int i = 0; i < A.length; i++){
+            if(count == 0){
+                count++;
+                dominator=A[i];
+                result = i;
+            }else{
+            if(dominator != A[i]){
+                    count--;
+                }else{
+                    count++;
+                    result = i;
+                }
+            }
+        }
+        if(count <= 0){
+            return -1;   
+        }
+        count = 0;
+        for(int i = 0; i < A.length; i++){
+            if(A[i] == dominator){
+                count++;
+            }
+        }
+        if(count > A.length/2){
+            return result;
+        }
+        return -1;
+    }
+}
+```

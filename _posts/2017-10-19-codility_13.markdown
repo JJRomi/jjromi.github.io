@@ -1,0 +1,83 @@
+---
+title:  "[Codility Lessons] MinAvgTwoSlice"
+date:   2017-10-19 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson5] Prefix Sums  
+###  MinAvgTwoSlice : Find the minimal average of any slice containing at least two elements.  
+---
+Java Solution
+- Task Score : 80  
+Correctness : 100 	Performance : 60  
+```
+class Solution {
+    public int solution(int[] A) {
+        int pos = A.length-2;
+        float min = (A[A.length-2]+A[A.length-1])/2.0f;
+        for(int i = 0; i < A.length-2; i++){
+            if(min > ((A[i]+A[i+1]) /2.0f)){
+                min = (A[i]+A[i+1])/2.0f;
+                pos = i;
+            }
+            if(min > ((A[i]+A[i+1]+A[i+2])/3.0f)){
+                min = (A[i]+A[i+1]+A[i+2])/3.0f;
+                pos = i;
+            }
+        }
+        return pos;
+    }
+}
+```
+- Task Score : 100  
+```
+class Solution {
+    public int solution(int[] A) {
+        int pos = 0;
+        float min = (A[0]+A[1])/2.0f;
+        for(int i = 0; i < A.length; i++){
+            if(i+1 < A.length){
+                if(min > (A[i]+A[i+1])/2.0f){
+                    min = (A[i]+A[i+1])/2.0f;
+                    pos = i;
+                }
+            }
+            if(i+2 < A.length){
+                if(min > (A[i]+A[i+1]+A[i+2])/3.0f){
+                    min = (A[i]+A[i+1]+A[i+2])/3.0f;
+                    pos = i;
+                }
+            }
+        }
+        return pos;
+    }
+}
+```
+---
+PHP Solution
+```
+function solution($A) {
+    $pos = 0;
+    $min = (float)($A[0]+$A[1])/2;
+    for($i = 0; $i < count($A); $i++){
+        if($i+1 < count($A)){
+            $tmp = (float)($A[$i]+$A[$i+1])/2;
+            if($min > $tmp){
+                $min = $tmp;  
+                $pos = $i;
+            }
+        }
+        if($i+2 < count($A)){
+            $tmp = (float)($A[$i]+$A[$i+1]+$A[$i+2])/3;
+            if($min > $tmp){
+                $min = $tmp;
+                $pos = $i;
+            }
+        }
+    }
+    return $pos;
+}
+```
+
+#### 참고  
+https://codesays.com/2014/solution-to-min-avg-two-slice-by-codility/

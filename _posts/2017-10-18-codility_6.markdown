@@ -1,0 +1,42 @@
+---
+title:  "[Codility Lessons] FrogJmp"
+date:   2017-10-18 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson3] Time Complexity  
+### FrogJmp : Count minimal number of jumps from position X to Y.  
+
+---
+Java Solution
+
+```
+class Solution {
+    public int solution(int X, int Y, int D) {
+        // frog가 가야할 거리 계산
+        int n = Y - X;
+        // frog가 Jump하는 수 계산
+        int count = n/D;
+        // n/D 나머지가 있을 경우 +1
+        if(n%D > 0){
+            count = count+1;
+        }
+        return count;
+    }
+}
+```
+
+---
+PHP Solution
+
+```
+function solution($X, $Y, $D) {
+    $n = $Y - $X;
+    $count = $n/$D;
+    if($n%$D > 0){
+        $count++;    
+    }
+    return (int)$count;
+
+}
+```

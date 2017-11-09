@@ -1,0 +1,53 @@
+---
+title:  "[Codility Lessons] CountDiv"
+date:   2017-10-18 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson5] Prefix Sums  
+###  CountDiv : Compute number of integers divisible by k in range [a..b].  
+
+---
+Java Solution
+- Task Score : 50  
+Correctness : 100 	Performance : 0
+```
+class Solution {
+    public int solution(int A, int B, int K) {
+        int count = 0;
+        // A부터 B+1까지 나머지 K 값이 0인 값 카운트
+        for(int i = A; i < B+1; i++){
+            if(i%K == 0){
+                count++;    
+            }    
+        }
+        return count;
+    }
+}
+```
+- Task Score : 100  
+```
+class Solution {
+    public int solution(int A, int B, int K) {
+        // (A부터 B까지) 나눌 수 있는 최소값
+        int total = (B/K) - (A/K);
+        // (A->B) : B-(A-(A%K)) 이므로 나누어졌을 때 +1
+        if(A%K == 0 ){
+            total += 1;    
+        }
+        return total;
+    }
+}
+```
+---
+PHP Solution
+
+```
+function solution($A, $B, $K) {
+    $total = (int)($B/$K)-(int)($A/$K);
+    if($A%$K == 0){
+        $total += 1;
+    }
+    return $total;
+}
+```

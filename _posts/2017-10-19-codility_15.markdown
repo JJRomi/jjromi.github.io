@@ -1,0 +1,39 @@
+---
+title:  "[Codility Lessons] Distinct"
+date:   2017-10-19 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson6] Sorting  
+### Distinct : Compute number of distinct values in an array.  
+---
+Java Solution
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int[] A) {
+        HashSet<Integer> distinct = new HashSet<Integer>();
+        for(int i = 0; i < A.length; i++){
+            distinct.add(A[i]);
+        }
+        int result = distinct.size();
+        return result;
+    }
+}
+```
+---
+PHP Solution  
+```
+function solution($A) {
+    $distinct = array();
+    foreach($A as $value){
+        if(!isset($distinct[$value])){
+            $distinct[$value] = true;
+        }else{
+            unset($distinct[$value]);    
+        }
+    }
+    return key($distinct);
+}
+```

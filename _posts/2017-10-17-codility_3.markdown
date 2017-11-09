@@ -1,0 +1,36 @@
+---
+title:  "[Codility Lessons] CyclicRotation"
+date:   2017-10-17 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson2] Arrays  
+### CyclicRotation : Rotate an array to the right by a given number of steps.  
+---
+Java Solution
+
+```
+class Solution {
+    public int[] solution(int[] A, int K) {
+        int[] rotate = new int[A.length];
+        for(int i = 0; i < A.length; i++){
+            rotate[(i+K)%A.length] = A[i];
+        }
+        return rotate;
+    }
+}
+```
+
+---
+PHP Solution
+
+```
+function solution($A, $K) {
+    $rotate = array();
+    for($i = 0; $i < count($A); $i++){
+        $key = ($i+$K)%count($A);
+        $rotate[$key] = $A[$i];
+    }
+    return $rotate;
+}
+```

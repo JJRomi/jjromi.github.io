@@ -1,0 +1,51 @@
+ ---
+title:  "[Codility Lessons] Flags(30/n)"
+date:   2017-10-28 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson10] Prime and composite numbers  
+###  Flags : Find the maximum number of flags that can be set on mountain peaks.  
+
+- Task Score : 40
+Correctness : 75 	Performance : 0
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int[] A) {
+        int flags = 0;
+        Stack<Integer> peaks = new Stack<Integer>();
+        for(int i = 1; i < A.length-1; i++){
+            if(A[i-1] < A[i] && A[i] > A[i+1]){
+                if(peaks.size() == 0 || flags < Math.abs(peaks.peek() - i)){
+                    peaks.push(i);
+                    flags++;
+                }    
+            }    
+        }
+        return peaks.size();
+    }
+}
+
+```
+- Task Score : 100  
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int N) {
+        int result = 0;
+        int i = 1;
+        for(i = 1; i < (double)Math.sqrt(N); i++){
+            if(N%i == 0){
+                result += 2;    
+            }
+        }
+        if(Math.pow(i, 2) == N){
+            result += 1;    
+        }
+        return result;
+    }
+}
+```

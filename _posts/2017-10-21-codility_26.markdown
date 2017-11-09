@@ -1,0 +1,60 @@
+ ---
+title:  "[Codility Lessons] MaxProfit"
+date:   2017-10-21 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson9] Maximum slice problem
+### MaxProfit
+
+- Task Score : 88
+Correctness : 80 	Performance : 100
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int[] A) {
+        int ending = 0;
+        int slice = 0;
+        int min = A[0];
+
+        if(A.length < 2) {
+            return 0;    
+        }
+        for(int i = 0; i < A.length;i++){
+            ending = Math.max(0, A[i]-min);
+            slice = Math.max(ending, slice);
+            min = Math.min(min, A[i]);
+        }
+
+        if(slice < 0){
+            return 0;    
+        }
+        return slice;
+    }
+}
+```
+- Task Score : 100  
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int[] A) {
+        int ending = 0;
+        int slice = 0;
+
+        if(A.length < 2) {
+            return 0;    
+        }
+        for(int i = 1; i < A.length;i++){
+            ending = Math.max(0, ending + A[i] - A[i-1]);
+            slice = Math.max(ending, slice);
+        }
+
+        if(slice < 0){
+            return 0;    
+        }
+        return slice;
+    }
+}
+```

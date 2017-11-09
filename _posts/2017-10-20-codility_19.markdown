@@ -1,0 +1,78 @@
+ ---
+title:  "[Codility Lessons] Brackets"
+date:   2017-10-20 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson7] Stacks and Queues
+### Brackets
+---
+Java Solution
+
+```
+import java.util.*;
+
+class Solution {
+    public int solution(String S) {
+        if(S.length()%2 > 0){
+            return 0;    
+        }
+        Stack<Character> left = new Stack<Character>();
+        HashMap<Character, Character> con = new HashMap<Character, Character>();
+        con.put('(', ')');
+        con.put('{', '}');
+        con.put('[', ']');
+        for(int i = 0; i < S.length(); i++){
+            char str = S.charAt(i);
+            if(con.containsKey(str)){
+                left.push(str);
+            }else{
+                if(left.empty()){
+                    return 0;    
+                }    
+                if(con.get(left.peek()) != str){
+                    return 0;    
+                }else{
+                    left.pop();
+                }
+            }
+        }
+        if(!left.empty()){
+            return 0;    
+        }
+        return 1;
+    }
+}
+```
+---
+PHP Solution
+https://codility.com/demo/results/trainingXCV3W7-BPT/
+
+```
+function solution($S) {
+    if(strlen($S)%2 > 0){
+        return 0;    
+    }
+    $left = array();
+    $str =  array('{' => '}' ,'(' => ')' ,'[' => ']');
+    for($i = 0; $i < strlen($S); $i++){
+        $ch = $S{$i};
+        if(array_key_exists($ch, $str)){
+            array_push($left, $ch);    
+        }else{
+            if(count($left) == 0){
+               return 0;    
+            }
+            if($str[end($left)] == $ch){
+                array_pop($left);
+            }else{
+                return 0;    
+            }
+        }
+    }
+    if(count($left) > 0){
+        return 0;    
+    }
+    return 1;
+}
+```

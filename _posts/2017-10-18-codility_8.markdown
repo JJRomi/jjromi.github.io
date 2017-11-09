@@ -1,0 +1,47 @@
+---
+title:  "[Codility Lessons] FrogRiverOne"
+date:   2017-10-18 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson4] Counting Elements  
+### FrogRiverOne : Find the earliest time when a frog can jump to the other side of a river.  
+
+---
+Java Solution
+
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int X, int[] A) {
+        // A 배열을 arr HashSet에 넣고 HashSet 크기와 X 비교
+        HashSet<Integer> arr = new HashSet<Integer>();
+        for(int i = 0; i < A.length; i++){
+            arr.add(A[i]);
+            if(arr.size() == X){
+                return i;    
+            }
+        }
+        return -1;
+    }
+}
+```
+
+---
+PHP Solution
+
+```
+function solution($X, $A) {
+    $arr = array();
+    foreach($A as $index=>$value){
+        if(!isset($arr[$value])){
+            $arr[$value] = $value;    
+        }
+        if(count($arr) == $X){
+            return $index;
+        }
+    }
+    return -1;
+}
+```

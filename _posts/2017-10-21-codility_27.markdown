@@ -1,0 +1,25 @@
+ ---
+title:  "[Codility Lessons]  MaxSliceSum"
+date:   2017-10-21 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson9] Maximum slice problem
+###  MaxSliceSum
+
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int[] A) {
+        int ending = A[0];
+        int slice = A[0];
+
+        for(int i = 1; i < A.length; i++){
+            ending = Math.max(A[i], A[i]+ending);
+            slice = Math.max(ending, slice);
+        }
+        return slice;
+    }
+}
+```

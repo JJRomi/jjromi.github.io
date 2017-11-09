@@ -1,0 +1,64 @@
+ ---
+title:  "[Codility Lessons] Nesting"
+date:   2017-10-20 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson7] Stacks and Queues
+### Nesting
+---
+Java Solution
+
+```
+import java.util.*;
+
+class Solution {
+    public int solution(String S) {
+        if(S.length()%2 > 0){
+            return 0;    
+        }
+        Stack<Character> left = new Stack<Character>();
+        for(int i = 0; i < S.length(); i++){
+            char str = S.charAt(i);
+            if(str == '('){
+                left.push(str);
+            }else{
+                if(left.empty()){
+                    return 0;    
+                }
+                left.pop();
+            }
+        }
+        if(!left.empty()){
+            return 0;    
+        }
+        return 1;
+    }
+}
+```
+---
+PHP Solution  
+
+```
+function solution($S) {
+    if(strlen($S)%2 > 0){
+        return 0;    
+    }
+    $left = array();
+    for($i = 0; $i < strlen($S); $i++){
+        $ch = $S{$i};
+        if($ch == '('){
+            array_push($left, $ch);    
+        }else{
+            if(count($left) == 0){
+                return 0;    
+            }
+            array_pop($left);
+        }
+    }
+    if(count($left) > 0){
+        return 0;    
+    }
+    return 1;
+}
+```

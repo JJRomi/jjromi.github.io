@@ -1,0 +1,52 @@
+ ---
+title:  "[Codility Lessons] StoneWall"
+date:   2017-10-20 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson7] Stacks and Queues
+### StoneWall : Cover "Manhattan skyline" using the minimum number of rectangles  
+---
+Java Solution
+Link : https://codility.com/demo/results/training6U5CTB-8PS/
+
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int[] H) {
+        Stack<Integer> wall = new Stack<Integer>();
+        int count = 0;
+        for(int i = 0; i < H.length; i++){
+            while(!wall.empty() && H[i] < wall.peek()){
+                wall.pop();
+            }
+            if(wall.empty() || H[i] > wall.peek()){
+                wall.push(H[i]);
+                count++;
+            }
+        }
+        return count;
+    }
+}
+```
+
+---
+PHP Solution
+
+```
+function solution($H) {
+    $wall = array();
+    $count = 0;
+    foreach($H as $value){
+        while(count($wall) > 0 && $value < end($wall)){
+            array_pop($wall);    
+        }    
+        if(count($wall) == 0 || $value > end($wall)){
+            array_push($wall, $value);
+            $count++;
+        }
+    }
+    return $count;
+}
+```

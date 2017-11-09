@@ -1,0 +1,50 @@
+ ---
+title:  "[Codility Lessons] EquiLeader"
+date:   2017-10-20 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson8] Leader
+### EquiLeader
+
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int[] A) {
+        int count = 0;
+        int dominator = 0;
+        for(int i = 0; i < A.length; i++){
+            if(count == 0){
+                count++;
+                dominator = A[i];
+            }else{
+                if(dominator != A[i]){
+                    count--;
+                }else{
+                    count++;    
+                }
+            }
+        }
+        if(count <= 0){
+            return 0;    
+        }
+        count = 0;
+        int[] leader = new int[A.length];
+        for(int i = 0; i < A.length; i++){
+            if(A[i] == dominator){
+                count++;    
+            }
+            leader[i] = count;
+
+        }
+        int result = 0;
+        for(int i = 0; i < A.length-1; i++){
+            if(leader[i] > (i+1)/2 && count-leader[i] > (A.length-i-1)/2){
+                result++;    
+            }    
+        }
+        return result;
+    }
+}
+```

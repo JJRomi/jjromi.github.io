@@ -1,0 +1,53 @@
+---
+title:  "[Lucky Algorithm] Missing Numbers (47/77)"
+date:   2017-11-09 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Missing Numbers (Hacker Rank)
+Numeros, the Artist, had two lists  and , such that  was a permutation of . Numeros was very proud of these lists. Unfortunately, while transporting them from one exhibition to another, some numbers were left out of . Can you find the missing numbers?
+
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in =  new Scanner(System.in);
+        int n = in.nextInt();
+        List<String> arrA = new ArrayList<String>();
+        List<String> result = new ArrayList<String>();
+        for(int i = 0; i < n; i++){
+            arrA.add(in.next());
+        }
+
+        int m = in.nextInt();
+        for(int j = 0; j < m; j++){
+            String tmp = in.next();
+            if(arrA.contains(tmp)){
+                arrA.remove(tmp);
+            }else{
+                if(!result.contains(tmp)){
+                    result.add(tmp);
+                }
+            }
+        }
+
+        Collections.sort(result);
+        for(int i = 0; i < result.size(); i++){
+            System.out.print(result.get(i) + " ");
+        }
+    }
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+```

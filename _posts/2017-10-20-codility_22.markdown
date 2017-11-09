@@ -1,0 +1,63 @@
+ ---
+title:  "[Codility Lessons] Fish"
+date:   2017-10-20 23:55:23
+categories: [study]
+tags: [algorithm, codility]
+---
+## [Lesson7] Stacks and Queues
+### Fish
+---
+Java Solution
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int[] A, int[] B) {
+        int count = A.length;
+        Stack<Integer> fish = new Stack<Integer>();
+        for(int i = 0; i < A.length; i++){
+            if(B[i] == 0){
+                if(!fish.empty()){
+                    while(!fish.empty()){
+                        count--;
+                        if(A[i] < fish.peek()){
+                            break;    
+                        }else{
+                            fish.pop();    
+                        }
+                    }
+                }
+            }else{
+                fish.push(A[i]);    
+            }
+        }
+        return count;
+    }
+}
+```
+---
+PHP Solution
+
+```
+function solution($A, $B) {
+    $count = count($A);
+    $fish = array();
+    for($i = 0; $i < count($A); $i++){
+        if($B[$i] == 0){
+            if(count($fish) > 0){
+                while(count($fish) > 0){
+                    $count--;
+                    if($A[$i] < end($fish)){
+                        break;    
+                    }else{
+                        array_pop($fish);    
+                    }
+                }
+            }    
+        }else{
+            array_push($fish, $A[$i]);    
+        }    
+    }
+    return $count;
+}
+```
