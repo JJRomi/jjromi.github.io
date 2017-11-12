@@ -1,0 +1,53 @@
+---
+title:  "[Lucky Algorithm] Jim and the Orders (48/77)"
+date:   2017-11-12 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Jim and the Orders (Hacker Rank)
+Jim's Burgers has  hungry burger fans waiting in line. Each unique order, , is placed by a customer at time , and the order takes  units of time to process.
+
+Given the information for all  orders, can you find and print the order in which all customers will receive their burgers? If two or more orders are fulfilled at the exact same time , sort them by ascending order number.
+
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        HashMap<Integer, Integer> ful = new HashMap<Integer, Integer>();
+        int[] s = new int[n];
+        for(int i = 0; i < n; i++){
+            int t = in.nextInt();
+            int d = in.nextInt();
+            int f = t + d;
+            while(ful.containsKey(f)){
+                f++;
+                if(!ful.containsKey(f)){
+                    break;
+                }
+            }
+            ful.put(f, i);
+            s[i] = f;
+        }
+
+        Arrays.sort(s);
+        for(int i = 0; i < n; i++){
+            System.out.print( (ful.get(s[i]) +1)  + " ");
+        }
+    }
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+```
