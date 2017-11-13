@@ -1,0 +1,61 @@
+---
+title:  "[Lucky Algorithm] Picking Numbers (48/77)"
+date:   2017-11-13 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Picking Numbers (Hacker Rank)
+Given an array of integers, find and print the maximum number of integers you can select from the array such that the absolute difference between any two of the chosen integers is >=1.
+
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        HashMap<Integer, Integer> picking = new HashMap<Integer, Integer>();
+        int max = 1, result = 0;
+        for(int i = 0; i < n; i++){
+            int a = in.nextInt();
+            int value = 1;
+            if(picking.containsKey(a)){
+                value = picking.get(a) + 1;
+                if(value > max){
+                    max = value;
+                }
+            }
+            picking.put(a, value);
+            if(picking.containsKey(a-1)){
+                int tmp = picking.get(a-1) + value;
+                if(tmp > result){
+                    result = tmp;
+                }
+            }
+            if(picking.containsKey(a+1)){
+                int tmp = picking.get(a+1) + value;
+                if(tmp > result){
+                    result = tmp;
+                }
+            }
+        }
+        if(max > result){
+            result = max;
+        }
+        System.out.println(result);
+    }
+}
+
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+```

@@ -1,5 +1,5 @@
 ---
-title:  "[Lucky Algorithm] Jim and the Orders (48/77)"
+title:  "[Lucky Algorithm] Jim and the Orders (47/77)"
 date:   2017-11-12 23:55:23
 categories: [study]
 tags: [algorithm, lucky, hackerrank]
