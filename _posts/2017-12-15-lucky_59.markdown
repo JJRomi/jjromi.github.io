@@ -1,0 +1,60 @@
+---
+title:  "[Lucky Algorithm] Day 26: Nested Logic (59/77)"
+date:   2017-12-15 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Day 26: Nested Logic (Hacker Rank)
+Objective
+Today's challenge puts your understanding of nested conditional statements to the test. You already have the knowledge to complete this challenge, but check out the Tutorial tab for a video on testing!
+
+Task
+Your local library needs your help! Given the expected and actual return dates for a library book, create a program that calculates the fine (if any). The fee structure is as follows:
+
+If the book is returned on or before the expected return date, no fine will be charged (i.e.: .
+If the book is returned after the expected return day but still within the same calendar month and year as the expected return date, .
+If the book is returned after the expected return month but still within the same calendar year as the expected return date, the .
+If the book is returned after the calendar year in which it was expected, there is a fixed fine of .
+
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int d1 = in.nextInt();
+        int m1 = in.nextInt();
+        int y1 = in.nextInt();
+
+        int d2 = in.nextInt();
+        int m2 = in.nextInt();
+        int y2 = in.nextInt();
+
+        int result = 0;
+        if(y1 > y2){
+            result = 10000;
+        }else if(y1 == y2){
+            if(m1 > m2){
+                result = 500 * (m1 - m2);
+            }else if(d1 > d2){
+                result = 15 * (d1 - d2);            
+            }
+        }
+
+        System.out.println(result);
+    }
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+  (한달은 이미 많이 지났지만...그래도 77문제는 될 수 있도록!)
+```

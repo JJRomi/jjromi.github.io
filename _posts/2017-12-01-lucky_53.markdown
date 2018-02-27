@@ -1,0 +1,25 @@
+---
+title:  "[Lucky Algorithm] Tree: Postorder Traversal (53/77)"
+date:   2017-12-01 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Tree: Postorder Traversal (Hacker Rank)
+Complete the postOrder function in your editor below, which has 1 parameter: a pointer to the root of a binary tree. It must print the values in the tree's postorder traversal as a single line of space-separated values.
+
+
+```
+void postOrder(Node root) {
+    if(root == null) return;
+    postOrder(root.left);
+    postOrder(root.right);
+    System.out.print(root.data + " ");
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+  (한달은 이미 많이 지났지만...그래도 77문제는 될 수 있도록!)
+```

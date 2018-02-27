@@ -1,0 +1,62 @@
+---
+title:  "[Lucky Algorithm] Correctness and the Loop Invariant (52/77)"
+date:   2017-11-28 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Correctness and the Loop Invariant (Hacker Rank)
+In the previous challenge, you wrote code to perform an Insertion Sort on an unsorted array. But how would you prove that the code is correct? I.e. how do you show that for any input your code will provide the right output?
+
+Loop Invariant
+In computer science, you could prove it formally with a loop invariant, where you state that a desired property is maintained in your loop. Such a proof is broken down into the following parts:
+
+Initialization: It is true (in a limited sense) before the loop runs.
+Maintenance: If it's true before an iteration of a loop, it remains true before the next iteration.
+Termination: It will terminate in a useful way once it is finished.
+
+
+```
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void insertionSort(int[] A){
+        for(int i = 1; i < A.length; i++){
+            int value = A[i];
+            int j = i - 1;
+            while(j >= 0 && A[j] > value){
+                A[j + 1] = A[j];
+                j = j - 1;
+            }
+            A[j + 1] = value;
+        }
+
+        printArray(A);
+    }
+
+
+    static void printArray(int[] ar) {
+        for(int n: ar){
+            System.out.print(n+" ");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] ar = new int[n];
+        for(int i=0;i<n;i++){
+            ar[i]=in.nextInt();
+        }
+        insertionSort(ar);
+    }
+}
+
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+  (한달은 이미 많이 지났지만...그래도 77문제는 될 수 있도록!)
+```

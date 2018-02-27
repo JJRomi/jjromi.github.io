@@ -1,0 +1,42 @@
+---
+title:  "[Lucky Algorithm] Intro to Tutorial Challenges (58/77)"
+date:   2017-12-13 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Intro to Tutorial Challenges (Hacker Rank)
+This is a simple challenge to get things started. Given a sorted array () and a number (), can you print the index location of  in the array?
+
+The next section describes the input format. You can often skip it, if you are using included methods.
+
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int value = in.nextInt();
+        int n = in.nextInt();
+        for(int i = 0; i < n; i++){
+            int x = in.nextInt();
+            if(x == value){
+                System.out.println(i);
+                break;
+            }
+        }
+
+    }
+}
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+  (한달은 이미 많이 지났지만...그래도 77문제는 될 수 있도록!)
+```

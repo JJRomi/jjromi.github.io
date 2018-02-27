@@ -1,0 +1,46 @@
+---
+title:  "[Lucky Algorithm] Marc's Cakewalk (54/77)"
+date:   2017-12-05 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Marc's Cakewalk (Hacker Rank)
+Marc loves cupcakes, but he also likes to stay fit. He eats  cupcakes in one sitting, and each cupcake  has a calorie count, . After eating a cupcake with  calories, he must walk at least  (where  is the number cupcakes he has already eaten) miles to maintain his weight.
+
+Given the individual calorie counts for each of the  cupcakes, find and print a long integer denoting the minimum number of miles Marc must walk to maintain his weight. Note that he can eat the cupcakes in any order.
+
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] calories = new int[n];
+        for(int calories_i=0; calories_i < n; calories_i++){
+            calories[calories_i] = in.nextInt();
+        }
+        Arrays.sort(calories);
+        long sum = 0;
+        for(int i = 0; i < n; i++){
+          //  System.out.println("sum : " + calories[n-i-1] + ": " + (i));
+              sum += (calories[n-i-1] * Math.pow(2,i));
+        }
+        System.out.println(sum);
+    }
+}
+
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+  (한달은 이미 많이 지났지만...그래도 77문제는 될 수 있도록!)
+```

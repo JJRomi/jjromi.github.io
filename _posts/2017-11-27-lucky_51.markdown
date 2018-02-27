@@ -1,0 +1,58 @@
+---
+title:  "[Lucky Algorithm] Ice Cream Parlor (51/77)"
+date:   2017-11-27 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Ice Cream Parlor (Hacker Rank)
+Each time Sunny and Johnny take a trip to the Ice Cream Parlor, they pool together  dollars for ice cream. On any given day, the parlor offers a line of  flavors. Each flavor, , is numbered sequentially with a unique ID number from  to  and has a cost, , associated with it.
+
+Given the value of  and the cost of each flavor for  trips to the Ice Cream Parlor, help Sunny and Johnny choose two flavors such that they spend their entire pool of money () during each visit. For each trip to the parlor, print the ID numbers for the two types of ice cream that Sunny and Johnny purchase as two space-separated integers on a new line. You must print the smaller ID first and the larger ID second.
+
+Note: Two ice creams having unique IDs  and  may have the same cost (i.e., ).
+
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    static void tripParlor(int n, int[] flavor){
+        HashMap<Integer, Integer> trips = new HashMap<Integer, Integer>();
+        trips.put(flavor[0], 1);
+        for(int i = 1; i < flavor.length; i++){
+            if(trips.get(n-flavor[i]) == null){
+                trips.put(flavor[i], i+1);
+            }else{
+                System.out.println(trips.get(n-flavor[i])+ " " + (i+1));
+                return;
+            }
+        }
+    }
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int m = in.nextInt();
+        for(int i = 0; i < m; i++){
+            int money = in.nextInt();
+            int n = in.nextInt();
+            int[] flavor = new int[n];
+            for(int j = 0; j < n; j++){
+                flavor[j] = in.nextInt();
+            }
+            tripParlor(money, flavor);
+        }
+
+    }
+}
+
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+  (한달은 이미 많이 지났지만...그래도 77문제는 될 수 있도록!)
+```

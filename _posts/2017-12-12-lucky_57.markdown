@@ -1,0 +1,52 @@
+---
+title:  "[Lucky Algorithm] Alternating Characters (57/77)"
+date:   2017-12-12 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Alternating Characters (Hacker Rank)
+You are given a string containing characters  and  only, your task is to change it into a string such that every two consecutive characters are different. To do this, you are allowed to delete one or more characters in the string.
+
+Your task is to find the minimum number of required deletions.
+
+For example, string  should be changed to  by deleting one character .
+
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static int alternatingCharacters(String s){
+        int result = 0;
+        //boolean flag = false;
+        for(int i = 0; i < s.length()-1; i++){
+            if(s.charAt(i) == s.charAt(i+1)){
+                result++;
+            }
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int q = in.nextInt();
+        for(int a0 = 0; a0 < q; a0++){
+            String s = in.next();
+            int result = alternatingCharacters(s);
+            System.out.println(result);
+        }
+    }
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+  (한달은 이미 많이 지났지만...그래도 77문제는 될 수 있도록!)
+```

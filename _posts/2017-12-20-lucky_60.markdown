@@ -1,0 +1,50 @@
+---
+title:  "[Lucky Algorithm] Designer PDF Viewer (60/77)"
+date:   2017-12-20 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Designer PDF Viewer (Hacker Rank)
+When you select a contiguous block of text in a PDF viewer, the selection is highlighted with a blue rectangle. In a new kind of PDF viewer, the selection of each word is independent of the other words; this means that each rectangular selection area forms independently around each highlighted word. For example:
+
+PDF-highighting.png
+
+In this type of PDF viewer, the width of the rectangular selection area is equal to the number of letters in the word times the width of a letter, and the height is the maximum height of any letter in the word.
+
+Consider a word consisting of lowercase English alphabetic letters, where each letter is  wide. Given the height of each letter in millimeters (), find the total area that will be highlighted by blue rectangle in when the given word is selected in our new PDF viewer.
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int[] h = new int[26];
+        for(int h_i=0; h_i < 26; h_i++){
+            h[h_i] = in.nextInt();
+        }
+        String word = in.next();
+        int tallest = 0;
+        for(int i = 0; i < word.length(); i++){
+            int alphabet = (int)word.charAt(i) - 97;
+            if(tallest < h[alphabet]){
+                tallest = h[alphabet];
+            }
+        }
+        int result = word.length() * tallest;
+        System.out.println(result);
+    }
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+  (한달은 이미 많이 지났지만...그래도 77문제는 될 수 있도록!)
+```

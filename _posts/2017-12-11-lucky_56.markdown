@@ -1,0 +1,54 @@
+---
+title:  "[Lucky Algorithm] Maximum Perimeter Triangle (56/77)"
+date:   2017-12-11 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Maximum Perimeter Triangle (Hacker Rank)
+Given  sticks of lengths , use  of the sticks to construct a non-degenerate triangle with the maximum possible perimeter. Then print the lengths of its sides as  space-separated integers in non-decreasing order.
+
+If there are several valid triangles having the maximum perimeter:
+
+Choose the one with the longest maximum side (i.e., the largest value for the longest side of any valid triangle having the maximum perimeter).
+If more than one such triangle meets the first criterion, choose the one with the longest minimum side (i.e., the largest value for the shortest side of any valid triangle having the maximum perimeter).
+If more than one such triangle meets the second criterion, print any one of the qualifying triangles.
+If no non-degenerate triangle exists, print -1.
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] triangles = new int[n];
+        for(int i = 0; i < n; i++){
+            triangles[i] = in.nextInt();
+        }
+        Arrays.sort(triangles);
+        boolean flag = true;
+        for(int k = n-1; k > 1; k--){           
+            if(triangles[k] < triangles[k-1] + triangles[k-2]){
+                flag = false;
+                System.out.println(triangles[k-2] + " " + triangles[k-1] + " " + triangles[k]);
+                break;
+            }
+        }
+        if(flag){
+            System.out.println("-1");
+        }
+    }
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+  (한달은 이미 많이 지났지만...그래도 77문제는 될 수 있도록!)
+```
