@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TEST</title>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<div id="testing">
+  <div v-cloak>
+      <div v-if="type==='A'">
+          <span>내가 바로 A 테스트지</span>
+      </div>
+  </div>
+
+  <div v-cloak>
+      <div v-if="type==='B'">
+          <span>내가 바로 B 테스트지</span>
+      </div>
+  </div>
+</div>
+
+<script>
+      abTest_vue = new Vue({
+
+          el: '#testing',
+          data: {
+              type: 'A'
+          },
+          methods: {
+
+          }
+      });
+
+  </script>
+</body>
+</html>
