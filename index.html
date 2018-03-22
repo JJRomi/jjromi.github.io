@@ -2,7 +2,6 @@
 layout: default
 robots: noindex
 ---
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <div class="main-post-list">
 
   <ol class="post-list">
@@ -26,16 +25,5 @@ robots: noindex
   {% if paginator.previous_page or paginator.next_page %}
       {% include pagination.html %}
   {% endif %}
-
-  <script>
-      abTest_vue = new Vue({
-          el: '#testing',
-          data: {
-              type: 'A'
-          },
-          methods: {
-          }
-      });
-  </script>
 
 </div>
