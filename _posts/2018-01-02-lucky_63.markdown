@@ -1,0 +1,55 @@
+---
+title:  "[Lucky Algorithm] Maximizing XOR (63/77)"
+date:   2018-01-02 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Maximizing XOR (Hacker Rank)
+Given two integers,  and , find the maximal value of  xor , written , where  and satisfy the following condition:
+
+
+For example, if  and , then
+
+
+
+Our maximum value is .
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static int maximizingXor(int l, int r) {
+        int max = 0;
+        for(int i = l; i <= r; i++ ){
+            for(int j = l; j <= r; j++){
+                if((i^j) > max){
+                    max = (i^j);
+                }
+            }
+        }
+        return max;
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int l = in.nextInt();
+        int r = in.nextInt();
+        int result = maximizingXor(l, r);
+        System.out.println(result);
+        in.close();
+    }
+}
+
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+  (한달은 이미 많이 지났지만...그래도 77문제는 될 수 있도록!)
+```

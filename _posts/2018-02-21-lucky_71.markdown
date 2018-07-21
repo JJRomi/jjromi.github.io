@@ -1,0 +1,47 @@
+---
+title:  "[Lucky Algorithm] Encryption (71/77)"
+date:   2018-02-21 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Encryption (Hacker Rank)
+An English text needs to be encrypted using the following encryption scheme.
+First, the spaces are removed from the text. Let  be the length of this text.
+Then, characters are written into a grid, whose rows and columns have the following constraints:
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static void encryption(String message){
+        double m_sqrt = Math.sqrt(message.length());
+        char[] m_char = message.toCharArray();
+        int row = (int)m_sqrt;
+        int column = (m_sqrt == (int)m_sqrt)? row : row + 1;
+        for(int i = 0; i < column; i++){
+            for(int j = i; j < message.length(); j += column){
+                System.out.print(m_char[j]);
+            }
+            System.out.print(" ");
+        }
+
+    }
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String s = in.next();
+        encryption(s);
+    }
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+  (한달은 이미 많이 지났지만...그래도 77문제는 될 수 있도록!)
+```

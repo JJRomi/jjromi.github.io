@@ -1,0 +1,53 @@
+---
+title:  "[Lucky Algorithm] Equalize the Array (72/77)"
+date:   2018-03-02 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Equalize the Array (Hacker Rank)
+Karl has an array of integers. He wants to reduce the array until all remaining elements are equal. Determine the fewest number of elements to delete to reach his goal.
+
+For example, if his array is , we see that he can delete the  elements  and  leaving . He could also delete both twos and either the  or the , but that would take  deletions. The minimum number of deletions is .
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static int equalizeArray(int[] arr) {
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        for(int i = 0; i < arr.length; i++){
+            if(map.containsKey(arr[i])){
+                map.put(arr[i], map.get(arr[i]) + 1);
+            }else{
+                map.put(arr[i], 1);
+            }
+        }
+
+        return arr.length - Collections.max(map.values());
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] arr = new int[n];
+        for(int arr_i = 0; arr_i < n; arr_i++){
+            arr[arr_i] = in.nextInt();
+        }
+        int result = equalizeArray(arr);
+        System.out.println(result);
+        in.close();
+    }
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+  (한달은 이미 많이 지났지만...그래도 77문제는 될 수 있도록!)
+```

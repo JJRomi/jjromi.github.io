@@ -1,0 +1,60 @@
+---
+title:  "[Lucky Algorithm] Angry Professor (69/77)"
+date:   2018-01-17 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Angry Professor (Hacker Rank)
+A Discrete Mathematics professor has a class of students. Frustrated with their lack of discipline, he decides to cancel class if fewer than some number of students are present when class starts. Arrival times go from on time () to arrived late ().
+
+Given the arrival time of each student and a threshhold number of attendees, determine if the class is canceled.
+
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static String angryProfessor(int k, int[] a) {
+        String result = "NO";
+        int count = 0;
+        for(int i = 0; i < a.length; i++){
+            if(a[i] <= 0){
+                count++;
+            }
+        }
+        if(count < k){
+            result = "YES";
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        for(int a0 = 0; a0 < t; a0++){
+            int n = in.nextInt();
+            int k = in.nextInt();
+            int[] a = new int[n];
+            for(int a_i = 0; a_i < n; a_i++){
+                a[a_i] = in.nextInt();
+            }
+            String result = angryProfessor(k, a);
+            System.out.println(result);
+        }
+        in.close();
+    }
+}
+
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+  (한달은 이미 많이 지났지만...그래도 77문제는 될 수 있도록!)
+```

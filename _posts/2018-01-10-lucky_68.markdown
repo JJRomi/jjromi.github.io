@@ -1,0 +1,63 @@
+---
+title:  "[Lucky Algorithm] Sherlock and Array (68/77)"
+date:   2018-01-10 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Sherlock and Array (Hacker Rank)
+Watson gives Sherlock an array of integers. His challenge is to find an element of the array such that the sum of all elements to the left is equal to the sum of all elements to the right. For instance, given the array ,  is between two subarray that sum to . If your starting array is , that element satisfies the rule as left and right sum to .
+
+You will be given arrays of integers and must determine whether there is an element that meets the criterion.
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static String solve(int[] a){
+        int sum = 0;
+        int l = 0;
+        int r = a.length-1;
+
+        while(l != r){
+            if (sum <= 0) {
+                sum += a[l];
+                l++;
+            } else {
+                sum -= a[r];
+                r--;
+            }
+        }
+        String result = "NO";
+        if(sum == 0){
+            result = "YES";
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int T = in.nextInt();
+        for(int a0 = 0; a0 < T; a0++){
+            int n = in.nextInt();
+            int[] a = new int[n];
+            for(int a_i=0; a_i < n; a_i++){
+                a[a_i] = in.nextInt();
+            }
+            String result = solve(a);
+            System.out.println(result);
+        }
+    }
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+  (한달은 이미 많이 지났지만...그래도 77문제는 될 수 있도록!)
+```

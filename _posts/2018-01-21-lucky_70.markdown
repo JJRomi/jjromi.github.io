@@ -1,0 +1,49 @@
+---
+title:  "[Lucky Algorithm] Greedy Florist
+ (70/77)"
+date:   2018-01-21 23:55:23
+categories: [study]
+tags: [algorithm, lucky, hackerrank]
+---
+## Greedy Florist (Hacker Rank)
+
+```
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static int getMinimumCost(int n, int k, int[] c){
+        Arrays.sort(c);
+        int result = 0;
+        int j = 0;
+        for(int i = n-1; i >= 0; i--){
+            result += ((j/k)+1) * c[i];
+            j++;
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int k = in.nextInt();
+        int[] c = new int[n];
+        for(int c_i=0; c_i < n; c_i++){
+            c[c_i] = in.nextInt();
+        }
+        int minimumCost = getMinimumCost(n, k, c);
+        System.out.println(minimumCost);
+    }
+}
+
+```
+
+##### 행운의 77문제 프로젝트
+```
+  행운의 77문제 프로젝트는 한 달동안 알고리즘 문제 77개를 푸는 프로젝트입니다.
+  (한달은 이미 많이 지났지만...그래도 77문제는 될 수 있도록!)
+```
