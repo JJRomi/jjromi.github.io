@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Picking Numbers (48/77)"
 date:   2017-11-13 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Picking Numbers (Hacker Rank)
 Given an array of integers, find and print the maximum number of integers you can select from the array such that the absolute difference between any two of the chosen integers is >=1.

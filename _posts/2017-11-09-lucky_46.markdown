@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Missing Numbers (46/77)"
 date:   2017-11-09 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Missing Numbers (Hacker Rank)
 Numeros, the Artist, had two lists  and , such that  was a permutation of . Numeros was very proud of these lists. Unfortunately, while transporting them from one exhibition to another, some numbers were left out of . Can you find the missing numbers?

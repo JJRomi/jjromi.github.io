@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Day of the Programmer (20/77)"
 date:   2017-09-21 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Day of the Programmer (Hacker Rank)
 Marie invented a Time Machine and wants to test it by time-traveling to visit Russia on the Day of the Programmer (the day of the year) during a year in the inclusive range from to .

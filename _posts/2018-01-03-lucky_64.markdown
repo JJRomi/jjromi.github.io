@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Utopian Tree (64/77)"
 date:   2018-01-03 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Utopian Tree (Hacker Rank)
 The Utopian Tree goes through 2 cycles of growth every year. Each spring, it doubles in height. Each summer, its height increases by 1 meter.

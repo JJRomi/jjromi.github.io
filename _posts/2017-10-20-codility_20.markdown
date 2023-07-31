@@ -1,8 +1,12 @@
 ---
 title:  "[Codility Lessons] Nesting(20/n)"
 date:   2017-10-20 23:55:23
-categories: [study]
-tags: [algorithm, codility]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - codility
 ---
 ## [Lesson7] Stacks and Queues
 ### Nesting

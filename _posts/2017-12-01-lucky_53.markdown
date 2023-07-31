@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Tree: Postorder Traversal (53/77)"
 date:   2017-12-01 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Tree: Postorder Traversal (Hacker Rank)
 Complete the postOrder function in your editor below, which has 1 parameter: a pointer to the root of a binary tree. It must print the values in the tree's postorder traversal as a single line of space-separated values.

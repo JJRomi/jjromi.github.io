@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Quicksort 1 - Partition(36/77)"
 date:   2017-10-12 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Quicksort 1 - Partition (Hacker Rank)
 The previous challenges covered Insertion Sort, which is a simple and intuitive sorting algorithm with an average case performance of . In these next few challenges, we're covering a divide-and-conquer algorithm called Quicksort (also known as Partition Sort).

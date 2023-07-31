@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Birthday Cake Candles (7/77)"
 date:   2017-09-17 17:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Birthday Cake Candles (Hacker Rank)
 Colleen is turning  years old! Therefore, she has  candles of various heights on her cake, and candle  has height . Because the taller candles tower over the shorter ones, Colleen can only blow out the tallest candles.

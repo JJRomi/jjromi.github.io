@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Correctness and the Loop Invariant (52/77)"
 date:   2017-11-28 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Correctness and the Loop Invariant (Hacker Rank)
 In the previous challenge, you wrote code to perform an Insertion Sort on an unsorted array. But how would you prove that the code is correct? I.e. how do you show that for any input your code will provide the right output?

@@ -1,8 +1,12 @@
 ---
 title:  "[Codility Lessons] OddOccurrencesInArray(2/n)"
 date:   2017-10-17 23:55:23
-categories: [study]
-tags: [algorithm, codility]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - codility
 ---
 ## [Lesson2] Array  
 ### OddOccurrencesInArray : Find value that occurs in odd number of elements.  

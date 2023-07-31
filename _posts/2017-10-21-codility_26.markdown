@@ -1,8 +1,12 @@
 ---
 title:  "[Codility Lessons] MaxProfit(26/n)"
 date:   2017-10-21 23:55:23
-categories: [study]
-tags: [algorithm, codility]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - codility
 ---
 ## [Lesson9] Maximum slice problem
 ### MaxProfit

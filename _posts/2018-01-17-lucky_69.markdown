@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Angry Professor (69/77)"
 date:   2018-01-17 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Angry Professor (Hacker Rank)
 A Discrete Mathematics professor has a class of students. Frustrated with their lack of discipline, he decides to cancel class if fewer than some number of students are present when class starts. Arrival times go from on time () to arrived late ().

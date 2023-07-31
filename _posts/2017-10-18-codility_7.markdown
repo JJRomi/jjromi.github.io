@@ -1,8 +1,12 @@
 ---
 title:  "[Codility Lessons] PermCheck(7/n)"
 date:   2017-10-18 23:55:23
-categories: [study]
-tags: [algorithm, codility]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - codility
 ---
 ## [Lesson4] Counting Elements  
 ### PermCheck : Check whether array A is a permutation.  

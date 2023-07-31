@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Between Two Sets (12/77)"
 date:   2017-09-18 17:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Between Two Sets (Hacker Rank)
 Consider two sets of positive integers,  and . We say that a positive integer, , is between sets  and  if the following conditions are satisfied:

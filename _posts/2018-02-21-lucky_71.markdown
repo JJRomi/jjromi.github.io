@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Encryption (71/77)"
 date:   2018-02-21 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Encryption (Hacker Rank)
 An English text needs to be encrypted using the following encryption scheme.

@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Marc's Cakewalk (54/77)"
 date:   2017-12-05 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Marc's Cakewalk (Hacker Rank)
 Marc loves cupcakes, but he also likes to stay fit. He eats  cupcakes in one sitting, and each cupcake  has a calorie count, . After eating a cupcake with  calories, he must walk at least  (where  is the number cupcakes he has already eaten) miles to maintain his weight.

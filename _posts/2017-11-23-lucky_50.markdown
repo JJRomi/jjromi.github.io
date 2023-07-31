@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Minimum Absolute Difference in an Array (50/77)"
 date:   2017-11-23 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Minimum Absolute Difference in an Array (Hacker Rank)
 Consider an array of integers, . We define the absolute difference between two elements, and  (where ), to be the absolute value of .

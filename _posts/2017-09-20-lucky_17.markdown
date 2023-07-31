@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Extra Long Factorials (16/77)"
 date:   2017-09-19 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Extra Long Factorials (Hacker Rank)
 You are given an integer . Print the factorial of this number.

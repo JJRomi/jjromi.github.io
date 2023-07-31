@@ -1,8 +1,12 @@
 ---
 title:  "[Codility Lessons] Flags(30/n)"
 date:   2017-10-28 23:55:23
-categories: [study]
-tags: [algorithm, codility]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - codility
 ---
 ## [Lesson10] Prime and composite numbers  
 ###  Flags : Find the maximum number of flags that can be set on mountain peaks.  

@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Closest Number(43/77)"
 date:   2017-10-14 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Closest Number (Hacker Rank)
 Sorting is often useful as the first step in many different tasks. The most common task is to make finding things easier, but there are other uses, as well.

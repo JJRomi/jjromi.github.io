@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Counting Sort 2(41/77)"
 date:   2017-10-13 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Counting Sort 2 (Hacker Rank)
 Often, when a list is sorted, the elements being sorted are just keys to other values. For example, if you are sorting files by their size, the sizes need to stay connected to their respective files. You cannot just take the size numbers and output them in order, you need to output all the required file information.

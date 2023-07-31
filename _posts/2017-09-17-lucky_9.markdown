@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Grading Students (9/77)"
 date:   2017-09-17 17:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Grading Students (Hacker Rank)
 HackerLand University has the following grading policy:

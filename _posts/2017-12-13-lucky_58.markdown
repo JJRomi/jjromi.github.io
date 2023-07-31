@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Intro to Tutorial Challenges (58/77)"
 date:   2017-12-13 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Intro to Tutorial Challenges (Hacker Rank)
 This is a simple challenge to get things started. Given a sorted array () and a number (), can you print the index location of  in the array?

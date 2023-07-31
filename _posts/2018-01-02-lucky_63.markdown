@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Maximizing XOR (63/77)"
 date:   2018-01-02 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Maximizing XOR (Hacker Rank)
 Given two integers,  and , find the maximal value of  xor , written , where  and satisfy the following condition:

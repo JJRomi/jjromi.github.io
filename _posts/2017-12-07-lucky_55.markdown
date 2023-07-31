@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Lonely Integer (55/77)"
 date:   2017-12-07 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Lonely Integer (Hacker Rank)
 Consider an array of  integers, , where all but one of the integers occur in pairs. In other words, every element in  occurs exactly twice except for one unique element.

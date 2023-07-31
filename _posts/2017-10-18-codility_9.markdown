@@ -1,8 +1,12 @@
 ---
 title:  "[Codility Lessons]  MissingInteger(9/n)"
 date:   2017-10-18 23:55:23
-categories: [study]
-tags: [algorithm, codility]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - codility
 ---
 ## [Lesson4] Counting Elements  
 ###  MissingInteger : Find the smallest positive integer that does not occur in a given sequence.  

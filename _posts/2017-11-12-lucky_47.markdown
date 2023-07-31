@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Jim and the Orders (47/77)"
 date:   2017-11-12 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Jim and the Orders (Hacker Rank)
 Jim's Burgers has  hungry burger fans waiting in line. Each unique order, , is placed by a customer at time , and the order takes  units of time to process.

@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Apple and Orange (10/77)"
 date:   2017-09-18 17:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Apple and Orange (Hacker Rank)
 

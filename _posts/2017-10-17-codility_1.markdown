@@ -1,8 +1,12 @@
 ---
 title:  "[Codility Lessons] BinaryGap(1/n)"
 date:   2017-10-17 23:55:23
-categories: [study]
-tags: [algorithm, codility]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - codility
 ---
 ## [Lesson1] Iterations  
 ### BinaryGap : Find longest sequence of zeros in binary representation of an integer.  

@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Sherlock and the Valid String(33/77)"
 date:   2017-10-05 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Sherlock and the Valid String (Hacker Rank)
 Sherlock considers a string, , to be valid if either of the following conditions are satisfied:

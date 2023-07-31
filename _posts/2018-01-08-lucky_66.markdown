@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] The Great XOR (66/77)"
 date:   2018-01-08 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## The Great XOR (Hacker Rank)
 

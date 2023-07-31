@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Fraudulent Activity Notifications (45/77)"
 date:   2017-10-16 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Fraudulent Activity Notifications (Hacker Rank)
 HackerLand National Bank has a simple policy for warning clients about possible fraudulent account activity. If the amount spent by a client on a particular day is greater than or equal to  the client's median spending for the last  days, they send the client a notification about potential fraud. The bank doesn't send the client any notifications until they have at least prior days of transaction data.

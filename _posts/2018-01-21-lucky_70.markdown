@@ -2,8 +2,12 @@
 title:  "[Lucky Algorithm] Greedy Florist
  (70/77)"
 date:   2018-01-21 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Greedy Florist (Hacker Rank)
 

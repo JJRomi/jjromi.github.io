@@ -1,8 +1,12 @@
 ---
 title:  "[Codility Lessons] MinAvgTwoSlice(13/n)"
 date:   2017-10-19 23:55:23
-categories: [study]
-tags: [algorithm, codility]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - codility
 ---
 ## [Lesson5] Prefix Sums  
 ###  MinAvgTwoSlice : Find the minimal average of any slice containing at least two elements.  

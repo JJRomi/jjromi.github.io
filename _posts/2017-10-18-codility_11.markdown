@@ -1,8 +1,12 @@
 ---
 title:  "[Codility Lessons] CountDiv(11/n)"
 date:   2017-10-18 23:55:23
-categories: [study]
-tags: [algorithm, codility]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - codility
 ---
 ## [Lesson5] Prefix Sums  
 ###  CountDiv : Compute number of integers divisible by k in range [a..b].  

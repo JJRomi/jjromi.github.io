@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Ice Cream Parlor (51/77)"
 date:   2017-11-27 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Ice Cream Parlor (Hacker Rank)
 Each time Sunny and Johnny take a trip to the Ice Cream Parlor, they pool together  dollars for ice cream. On any given day, the parlor offers a line of  flavors. Each flavor, , is numbered sequentially with a unique ID number from  to  and has a cost, , associated with it.

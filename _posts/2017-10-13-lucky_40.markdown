@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Counting Sort 1(40/77)"
 date:   2017-10-13 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Counting Sort 1 (Hacker Rank)
 Comparison Sorting

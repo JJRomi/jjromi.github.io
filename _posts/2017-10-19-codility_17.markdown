@@ -1,8 +1,12 @@
 ---
 title:  "[Codility Lessons] MaxProductOfThree(17/n)"
 date:   2017-10-19 23:55:23
-categories: [study]
-tags: [algorithm, codility]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - codility
 ---
 ## [Lesson6] Sorting  
 ### MaxProductOfThree : Maximize A[P] * A[Q] * A[R] for any triplet (P, Q, R).  

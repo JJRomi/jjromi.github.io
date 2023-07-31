@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] CamelCase(28/77)"
 date:   2017-09-26 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## CamelCase (Hacker Rank)
 Alice wrote a sequence of words in CamelCase as a string of letters, , having the following properties:

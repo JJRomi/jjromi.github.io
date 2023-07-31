@@ -1,8 +1,12 @@
 ---
 title:  "[Codility Lessons] PassingCars(12/n)"
 date:   2017-10-19 23:55:23
-categories: [study]
-tags: [algorithm, codility]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - codility
 ---
 ## [Lesson5] Prefix Sums  
 ###  PassingCars : Count the number of passing cars on the road.  

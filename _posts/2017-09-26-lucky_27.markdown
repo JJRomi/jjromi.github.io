@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Super Reduced String(27/77)"
 date:   2017-09-26 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Super Reduced String (Hacker Rank)
 Steve has a string, , consisting of  lowercase English alphabetic letters. In one operation, he can delete any pair of adjacent letters with same value. For example, string "aabcc" would become either "aab" or "bcc" after  operation.

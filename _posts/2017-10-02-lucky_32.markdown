@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Game of Stones(32/77)"
 date:   2017-10-02 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Game of Stones (Hacker Rank)
 Two players (numbered  and ) are playing a game with  stones. Player  always plays first, and the two players move in alternating turns. The game's rules are as follows:

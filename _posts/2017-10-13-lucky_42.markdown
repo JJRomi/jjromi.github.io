@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] The Full Counting Sort(42/77)"
 date:   2017-10-13 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## The Full Counting Sort (Hacker Rank)
 In this challenge you need to print the data that accompanies each integer in a list. In addition, if two strings have the same integers, you need to print the strings in their original order. Hence, your sorting algorithm should be stable, i.e. the original order should be maintained for equal elements.

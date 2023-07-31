@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Find the Median(44/77)"
 date:   2017-10-14 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Find the Median (Hacker Rank)
 Given a list of numbers, can you find the median?

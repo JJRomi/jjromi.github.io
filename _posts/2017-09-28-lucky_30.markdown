@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] HackerRank in a String!(30/77)"
 date:   2017-09-28 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## HackerRank in a String! (Hacker Rank)
 We say that a string, , contains the word hackerrank if a subsequence of the characters in  spell the word hackerrank. For example, haacckkerrannkk does contain hackerrank, but haacckkerannk does not (the characters all appear in the same order, but it's missing a second r).

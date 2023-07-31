@@ -1,8 +1,12 @@
 ---
 title:  "[Codility Lessons]  MissingInteger(10/n)"
 date:   2017-10-18 23:55:23
-categories: [study]
-tags: [algorithm, codility]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - codility
 ---
 ## [Lesson4] Counting Elements  
 ###  MaxCounters : Calculate the values of counters after applying all alternating operations: increase counter by 1; set value of all counters to current maximum.  

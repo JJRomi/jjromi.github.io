@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Divisible Sum Pairs (15/77)"
 date:   2017-09-19 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Divisible Sum Pairs (Hacker Rank)
 You are given an array of  integers, , and a positive integer, . Find and print the number of pairs where  and  +  is divisible by .

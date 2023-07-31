@@ -1,8 +1,12 @@
 ---
 title:  "[Codility Lessons] Distinct(15/n)"
 date:   2017-10-19 23:55:23
-categories: [study]
-tags: [algorithm, codility]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - codility
 ---
 ## [Lesson6] Sorting  
 ### Distinct : Compute number of distinct values in an array.  

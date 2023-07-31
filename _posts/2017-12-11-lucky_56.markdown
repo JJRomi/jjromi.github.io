@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Maximum Perimeter Triangle (56/77)"
 date:   2017-12-11 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Maximum Perimeter Triangle (Hacker Rank)
 Given  sticks of lengths , use  of the sticks to construct a non-degenerate triangle with the maximum possible perimeter. Then print the lengths of its sides as  space-separated integers in non-decreasing order.

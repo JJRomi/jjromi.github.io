@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Designer PDF Viewer (60/77)"
 date:   2017-12-20 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Designer PDF Viewer (Hacker Rank)
 When you select a contiguous block of text in a PDF viewer, the selection is highlighted with a blue rectangle. In a new kind of PDF viewer, the selection of each word is independent of the other words; this means that each rectangular selection area forms independently around each highlighted word. For example:

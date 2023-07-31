@@ -1,8 +1,12 @@
 ---
 title:  "[Codility Lessons] TapeEquilibrium(4/n)"
 date:   2017-10-18 23:55:23
-categories: [study]
-tags: [algorithm, codility]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - codility
 ---
 ## [Lesson3] Time Complexity  
 ### TapeEquilibrium : Minimize the value |(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])|.  

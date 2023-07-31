@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Bon Appétit (18/77)"
 date:   2017-09-21 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Bon Appétit (Hacker Rank)
 Anna and Brian order  items at a restaurant, but Anna declines to eat any of the  item (where ) due to an allergy. When the check comes, they decide to split the cost of all the items they shared; however, Brian may have forgotten that they didn't split the  item and accidentally charged Anna for it.

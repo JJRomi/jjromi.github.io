@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Insertion Sort - Part 1(37/77)"
 date:   2017-10-12 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Insertion Sort - Part 1 (Hacker Rank)
 Sorting

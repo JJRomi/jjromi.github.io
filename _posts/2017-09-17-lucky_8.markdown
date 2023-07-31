@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Time Conversion (8/77)"
 date:   2017-09-17 17:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Staircase (Hacker Rank)
 Given a time in -hour AM/PM format, convert it to military (-hour) time.

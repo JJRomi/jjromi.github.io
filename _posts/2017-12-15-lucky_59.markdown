@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Day 26: Nested Logic (59/77)"
 date:   2017-12-15 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Day 26: Nested Logic (Hacker Rank)
 Objective

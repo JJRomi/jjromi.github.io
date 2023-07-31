@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Find Digits(26/77)"
 date:   2017-09-26 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Find Digits (Hacker Rank)
 Given an integer, , traverse its digits (1,2,...,n) and determine how many digits evenly divide  (i.e.: count the number of times  divided by each digit i has a remainder of ). Print the number of evenly divisible digits.

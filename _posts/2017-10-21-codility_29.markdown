@@ -1,8 +1,12 @@
 ---
 title:  "[Codility Lessons] CountFactors(29/n)"
 date:   2017-10-21 23:55:23
-categories: [study]
-tags: [algorithm, codility]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - codility
 ---
 ## [Lesson10] Prime and composite numbers  
 ###  CountFactors

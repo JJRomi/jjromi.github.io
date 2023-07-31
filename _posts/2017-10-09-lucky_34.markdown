@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] The Power Sum(34/77)"
 date:   2017-10-09 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## The Power Sum (Hacker Rank)
 Find the number of ways that a given integer, , can be expressed as the sum of the  power of unique, natural numbers.

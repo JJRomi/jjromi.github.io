@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Birthday Chocolate (14/77)"
 date:   2017-09-19 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Birthday Chocolate (Hacker Rank)
 Lily has a chocolate bar consisting of a row of  squares where each square has an integer written on it. She wants to share it with Ron for his birthday, which falls on month  and day . Lily wants to give Ron a piece of chocolate only if it contains  consecutive squares whose integers sum to .

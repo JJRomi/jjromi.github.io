@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Plus Minus (4/77)"
 date:   2017-09-15 11:36:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Plus Minus (Hacker Rank)
     Given an array of integers, calculate which fraction of its elements are positive, which fraction of its elements are negative, and which fraction of its elements are zeroes, respectively. Print the decimal value of each fraction on a new line.

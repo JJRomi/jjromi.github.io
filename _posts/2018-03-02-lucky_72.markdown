@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Equalize the Array (72/77)"
 date:   2018-03-02 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Equalize the Array (Hacker Rank)
 Karl has an array of integers. He wants to reduce the array until all remaining elements are equal. Determine the fewest number of elements to delete to reach his goal.

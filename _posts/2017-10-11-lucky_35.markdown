@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Weighted Uniform Strings(35/77)"
 date:   2017-10-11 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Weighted Uniform Strings (Hacker Rank)
 A weighted string is a string of lowercase English letters where each letter has a weight in the inclusive range from  to , defined below:

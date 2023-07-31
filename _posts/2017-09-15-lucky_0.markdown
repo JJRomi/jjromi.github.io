@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Intro (0/77)"
 date:   2017-09-15 11:00:00
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Lucky 77 Algorithm Intro (Hacker Rank)
 

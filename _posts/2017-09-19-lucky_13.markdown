@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Breaking the Records (13/77)"
 date:   2017-09-19 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Breaking the Records (Hacker Rank)
 Maria plays  games of college basketball in a season. Because she wants to go pro, she tracks her points scored per game sequentially in an array defined as . After each game , she checks to see if score  breaks her record for most or least points scored so far during that season.

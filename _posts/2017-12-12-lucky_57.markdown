@@ -1,8 +1,12 @@
 ---
 title:  "[Lucky Algorithm] Alternating Characters (57/77)"
 date:   2017-12-12 23:55:23
-categories: [study]
-tags: [algorithm, lucky, hackerrank]
+categories:
+  - Algorithm
+tags:
+  - algorithm
+  - lucky
+  - hackerrank
 ---
 ## Alternating Characters (Hacker Rank)
 You are given a string containing characters  and  only, your task is to change it into a string such that every two consecutive characters are different. To do this, you are allowed to delete one or more characters in the string.
